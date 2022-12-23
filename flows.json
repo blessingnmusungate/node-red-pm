@@ -1,0 +1,3045 @@
+[
+    {
+        "id": "bbfee7aa91eb9f81",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c86eb73a2941d666",
+        "type": "tab",
+        "label": "EdgeComputingFlow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f20d4b2721bc1e09",
+        "type": "subflow",
+        "name": "Read Data File",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "1b26083b424b6925"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 700,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "0be3d2774909f3d7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "bffcdad394c856f6",
+        "type": "subflow",
+        "name": "EdgeNode1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "b9d0712555976f68"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 520,
+                "wires": []
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d7e86ab1dbf38c0c",
+        "type": "subflow",
+        "name": "Write Data to File",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "74224315ff6ba594"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "6d6e135720f54223",
+        "type": "subflow",
+        "name": "Inputs1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 440,
+                "wires": [
+                    {
+                        "id": "cf8def10793cd318"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 560,
+                "y": 520,
+                "wires": [
+                    {
+                        "id": "fbc4b79b4b8a61a7",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 580,
+                "wires": [
+                    {
+                        "id": "61f5672df6d3818c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 560,
+                "y": 640,
+                "wires": [
+                    {
+                        "id": "3881a9eac423b533",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "e66ff88d02845195",
+        "type": "subflow",
+        "name": "DBHandler",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "bae65c90d092930f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "8fd8fcf3a3aabd7e",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ee6da9a979945503",
+        "type": "subflow",
+        "name": "GetDBData",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "e04f5b8f59b87329"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 640,
+                "y": 560,
+                "wires": [
+                    {
+                        "id": "7a798d240a10dfe7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "6bde268a23e17faf",
+        "type": "subflow",
+        "name": "DataPreprocessing",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "de565ad94fac0180"
+                    },
+                    {
+                        "id": "f973fa1eb70a3c3a"
+                    },
+                    {
+                        "id": "d11af3a872894da9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 960,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "2d04c50b051532d9",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "51cab0923b3cdfd1",
+        "type": "subflow",
+        "name": "TemperatureMLModel",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "66c9f844d6ad1f1f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "8b19aacb63a6a5b6",
+                        "port": 0
+                    },
+                    {
+                        "id": "a02a3cb506b1ac53",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ad8135a6624fbd19",
+        "type": "subflow",
+        "name": "PressureMLModel",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "42b87ca37fa29888"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "f332113a57ebb977",
+                        "port": 0
+                    },
+                    {
+                        "id": "5d7daa29cf131bbe",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "02f2c978721b1b05",
+        "type": "subflow",
+        "name": "HumidityMLModel",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "188a72dffbefc133"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "78c8932883973835",
+                        "port": 0
+                    },
+                    {
+                        "id": "6661cc1f8b583ed4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "6282415b8a339d0d",
+        "type": "subflow",
+        "name": "findMinMax",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "8dca42bdf74c7c6a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 620,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "8dca42bdf74c7c6a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "97c34c3cf3ec4a93",
+        "type": "subflow",
+        "name": "NormalizeValue",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 300,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "1ef48e35c504b6c4"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 680,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "1ef48e35c504b6c4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ea34a77b88c038b0",
+        "type": "subflow",
+        "name": "WebService",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": []
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "cccc81e815b36428",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "3eea6da9acd67980",
+        "type": "subflow",
+        "name": "LogisticRegressionModel",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 360,
+                "wires": [
+                    {
+                        "id": "01f409f9b65871fc"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "0c8845731508ab7e",
+                        "port": 0
+                    },
+                    {
+                        "id": "4cb6c2ef85e9559a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "b1942cd0e3fb69cc",
+        "type": "subflow",
+        "name": "ReadFileData",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "892edc1de4588edb"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 940,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "f7dd62e8ce3bc4e2",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "65bb01d7a33d3a8f",
+        "type": "subflow",
+        "name": "NaiveBayes",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "bfb105564acf6b2f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 840,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "c1d05b1affdb809c",
+                        "port": 0
+                    },
+                    {
+                        "id": "d2a3b63e8dd38a3d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "9566982d40e572b6",
+        "type": "subflow",
+        "name": "DecisionTree",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "b4b47f19ee854893"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "3724bacfe4d54a7e",
+                        "port": 0
+                    },
+                    {
+                        "id": "9728f44b22a7540a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "b4fdd94459dced40",
+        "type": "subflow",
+        "name": "RandomForest",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 140,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "f52fea48342cd315"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "dda5b3c2d284cf44",
+                        "port": 0
+                    },
+                    {
+                        "id": "d5b4c830e42d2a81",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a2f8739eef20117c",
+        "type": "subflow",
+        "name": "EdgeNode2",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 400,
+                "y": 540,
+                "wires": [
+                    {
+                        "id": "703b133052607889"
+                    },
+                    {
+                        "id": "a1820a793dd0a7c1"
+                    },
+                    {
+                        "id": "b7e75bb5281f126b"
+                    },
+                    {
+                        "id": "df8dd4506a3b1dc5"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1260,
+                "y": 480,
+                "wires": [
+                    {
+                        "id": "703b133052607889",
+                        "port": 0
+                    },
+                    {
+                        "id": "a1820a793dd0a7c1",
+                        "port": 0
+                    },
+                    {
+                        "id": "df8dd4506a3b1dc5",
+                        "port": 0
+                    },
+                    {
+                        "id": "b7e75bb5281f126b",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a66c82f3cadc8b79",
+        "type": "subflow",
+        "name": "LoadMLData",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "3397414a01bb12a0"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "239fd604d456a852",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d022eb2b56d54e12",
+        "type": "subflow",
+        "name": "Inputs2",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "8908994348a8c6df"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 760,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "ace854d5c23f4448",
+                        "port": 0
+                    },
+                    {
+                        "id": "93ef18d411c368af",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ca8819eba79088f2",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "edgecomputing",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "e031f2345abfb26b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "http://127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1b26083b424b6925",
+        "type": "file in",
+        "z": "f20d4b2721bc1e09",
+        "name": "read file",
+        "filename": "D:\\University\\Masters Education\\Semester III\\dev\\data.csv",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "aaf8efbccc4e37b1"
+            ]
+        ]
+    },
+    {
+        "id": "aaf8efbccc4e37b1",
+        "type": "csv",
+        "z": "f20d4b2721bc1e09",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "0be3d2774909f3d7"
+            ]
+        ]
+    },
+    {
+        "id": "0be3d2774909f3d7",
+        "type": "join",
+        "z": "f20d4b2721bc1e09",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 570,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c55be0bf9b8eeea4",
+        "type": "change",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "init",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "d18a9780e0b59535"
+            ]
+        ]
+    },
+    {
+        "id": "a0c4766bca552440",
+        "type": "inject",
+        "z": "bffcdad394c856f6",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "3",
+        "topic": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 20,
+        "wires": [
+            [
+                "936b44edd21fa2f2"
+            ]
+        ]
+    },
+    {
+        "id": "936b44edd21fa2f2",
+        "type": "subflow:ee6da9a979945503",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 370,
+        "y": 20,
+        "wires": [
+            [
+                "873486b6a810a4e1"
+            ]
+        ]
+    },
+    {
+        "id": "873486b6a810a4e1",
+        "type": "subflow:6bde268a23e17faf",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 670,
+        "y": 20,
+        "wires": [
+            [
+                "c55be0bf9b8eeea4"
+            ]
+        ]
+    },
+    {
+        "id": "9036d47e265a56d2",
+        "type": "subflow:51cab0923b3cdfd1",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 700,
+        "y": 140,
+        "wires": [
+            [
+                "cd8bab635a1d8dab"
+            ]
+        ]
+    },
+    {
+        "id": "51f61fd53c221132",
+        "type": "switch",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "temperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "pressure",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "humidity",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "9036d47e265a56d2"
+            ],
+            [
+                "0795c608e821514a"
+            ],
+            [
+                "45893aaa2f9f748d"
+            ]
+        ]
+    },
+    {
+        "id": "b9d0712555976f68",
+        "type": "json",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "8e1507f1f818d5dc"
+            ]
+        ]
+    },
+    {
+        "id": "0795c608e821514a",
+        "type": "subflow:ad8135a6624fbd19",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "5595539e286a84e1"
+            ]
+        ]
+    },
+    {
+        "id": "45893aaa2f9f748d",
+        "type": "subflow:02f2c978721b1b05",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 690,
+        "y": 360,
+        "wires": [
+            [
+                "cde7fa7d566bd948"
+            ]
+        ]
+    },
+    {
+        "id": "d18a9780e0b59535",
+        "type": "function",
+        "z": "bffcdad394c856f6",
+        "name": "storeKeyValues",
+        "func": "const {min, max, readings} = msg.payload;\nstoreMinMax(min, max, msg.topic)\nmsg.payload=readings;\nreturn msg;\n\nfunction storeMinMax(min, max, topic){\n    let minKey = \"min_\" + topic;\n    let maxKey = \"max_\" + topic;\n    flow.set(minKey, min);\n    flow.set(maxKey, max);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "51f61fd53c221132"
+            ]
+        ]
+    },
+    {
+        "id": "80e6d9b6ddfbc8f7",
+        "type": "subflow:97c34c3cf3ec4a93",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "51f61fd53c221132"
+            ]
+        ]
+    },
+    {
+        "id": "8e1507f1f818d5dc",
+        "type": "function",
+        "z": "bffcdad394c856f6",
+        "name": "getKeyValues",
+        "func": "let minKey = \"min_\" + msg.topic;\nlet maxKey = \"max_\" + msg.topic;\nlet min = flow.get(minKey);\nlet max = flow.get(maxKey);\nmsg.payload ={min, max, ...msg.payload}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "80e6d9b6ddfbc8f7"
+            ]
+        ]
+    },
+    {
+        "id": "cd8bab635a1d8dab",
+        "type": "debug",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5595539e286a84e1",
+        "type": "debug",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "cde7fa7d566bd948",
+        "type": "debug",
+        "z": "bffcdad394c856f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "74224315ff6ba594",
+        "type": "function",
+        "z": "d7e86ab1dbf38c0c",
+        "name": "",
+        "func": "if(msg.init)\n    return null;\nlet data = msg.payload;\nlet tempClass = msg.tempClass;\nmsg.payload = `${data},${tempClass}`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "8ad6ba3de6c7e2b1"
+            ]
+        ]
+    },
+    {
+        "id": "8ad6ba3de6c7e2b1",
+        "type": "file",
+        "z": "d7e86ab1dbf38c0c",
+        "name": "",
+        "filename": "D:\\University\\Masters Education\\Semester III\\dev\\datanew.csv",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 610,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34b0005fece43342",
+        "type": "aedes broker",
+        "z": "6d6e135720f54223",
+        "name": "Broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "443",
+        "mqtt_ws_path": "/",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cf8def10793cd318",
+        "type": "mqtt out",
+        "z": "6d6e135720f54223",
+        "name": "publisher",
+        "topic": "control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e031f2345abfb26b",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "15daca0c9bf9a14b",
+        "type": "aedes broker",
+        "z": "6d6e135720f54223",
+        "name": "PressureBroker",
+        "mqtt_port": "1884",
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "444",
+        "mqtt_ws_path": "/",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a0d268b9f30af5b8",
+        "type": "aedes broker",
+        "z": "6d6e135720f54223",
+        "name": "HumidityBroker",
+        "mqtt_port": "1886",
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "446",
+        "mqtt_ws_path": "/",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 300,
+        "y": 40,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fbc4b79b4b8a61a7",
+        "type": "mqtt in",
+        "z": "6d6e135720f54223",
+        "name": "",
+        "topic": "temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e031f2345abfb26b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61f5672df6d3818c",
+        "type": "mqtt in",
+        "z": "6d6e135720f54223",
+        "name": "",
+        "topic": "pressure",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e031f2345abfb26b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3881a9eac423b533",
+        "type": "mqtt in",
+        "z": "6d6e135720f54223",
+        "name": "",
+        "topic": "humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "e031f2345abfb26b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac7495c58def8b9f",
+        "type": "mysql",
+        "z": "e66ff88d02845195",
+        "mydb": "ca8819eba79088f2",
+        "name": "EdgeComputingDB",
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "8fd8fcf3a3aabd7e"
+            ]
+        ]
+    },
+    {
+        "id": "bae65c90d092930f",
+        "type": "function",
+        "z": "e66ff88d02845195",
+        "name": "passQuery",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "ac7495c58def8b9f"
+            ]
+        ]
+    },
+    {
+        "id": "8fd8fcf3a3aabd7e",
+        "type": "function",
+        "z": "e66ff88d02845195",
+        "name": "addQueryRef",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a81510dddf6dc7f7",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "getDBTemperatureReadings",
+        "func": "msg.topic=\"select * from temperature_readings\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "621bf0c9c8231584"
+            ]
+        ]
+    },
+    {
+        "id": "86d21e20a915b3e4",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "getDBPressureReadings",
+        "func": "msg.topic=\"select * from pressure_readings\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "5342229666e1d654"
+            ]
+        ]
+    },
+    {
+        "id": "396a7f81054aa538",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "getDBHumidityReadings",
+        "func": "msg.topic=\"select * from humidity_readings\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "bb98977aef628a4f"
+            ]
+        ]
+    },
+    {
+        "id": "f66093f75bfdf99e",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "saveRangeValues",
+        "func": "flow.set(\"range_values\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 750,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c6b046a8308e98f",
+        "type": "subflow:e66ff88d02845195",
+        "z": "ee6da9a979945503",
+        "name": "",
+        "x": 540,
+        "y": 40,
+        "wires": [
+            [
+                "f66093f75bfdf99e"
+            ]
+        ]
+    },
+    {
+        "id": "e04f5b8f59b87329",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "readRangeValues",
+        "func": "msg.topic=\"select * from range_values\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "2c6b046a8308e98f"
+            ]
+        ]
+    },
+    {
+        "id": "955173968ad0fe96",
+        "type": "complete",
+        "z": "ee6da9a979945503",
+        "name": "afterRangeValuesSave",
+        "scope": [
+            "f66093f75bfdf99e"
+        ],
+        "uncaught": false,
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "a81510dddf6dc7f7",
+                "86d21e20a915b3e4",
+                "396a7f81054aa538"
+            ]
+        ]
+    },
+    {
+        "id": "5342229666e1d654",
+        "type": "subflow:e66ff88d02845195",
+        "z": "ee6da9a979945503",
+        "name": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "203f92e9237ef527"
+            ]
+        ]
+    },
+    {
+        "id": "621bf0c9c8231584",
+        "type": "subflow:e66ff88d02845195",
+        "z": "ee6da9a979945503",
+        "name": "",
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "9181a2d75c7812d1"
+            ]
+        ]
+    },
+    {
+        "id": "bb98977aef628a4f",
+        "type": "subflow:e66ff88d02845195",
+        "z": "ee6da9a979945503",
+        "name": "",
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "fe12a40cf3ce4176"
+            ]
+        ]
+    },
+    {
+        "id": "fe12a40cf3ce4176",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "saveHumidityReadings",
+        "func": "flow.set(\"humidity_readings\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9181a2d75c7812d1",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "saveTemperatureReadings",
+        "func": "flow.set(\"temperature_readings\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 900,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "203f92e9237ef527",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "savePressureReadings",
+        "func": "flow.set(\"pressure_readings\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 890,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9edfdae7ee88bfa9",
+        "type": "complete",
+        "z": "ee6da9a979945503",
+        "name": "afterReadings",
+        "scope": [
+            "fe12a40cf3ce4176",
+            "9181a2d75c7812d1",
+            "203f92e9237ef527"
+        ],
+        "uncaught": false,
+        "x": 160,
+        "y": 560,
+        "wires": [
+            [
+                "7a798d240a10dfe7"
+            ]
+        ]
+    },
+    {
+        "id": "7a798d240a10dfe7",
+        "type": "function",
+        "z": "ee6da9a979945503",
+        "name": "SendData",
+        "func": "let readings_count = context.get(\"readings_count\") || 0;\nreadings_count++;\nif(readings_count<3){\n    context.set(\"readings_count\", readings_count)\n    return null;\n}\n\n\nlet range_values = flow.get(\"range_values\");\nlet temperature_readings = flow.get(\"temperature_readings\");\nlet pressure_readings = flow.get(\"pressure_readings\");\nlet humidity_readings = flow.get(\"humidity_readings\");\nmsg.payload = {range_values, temperature_readings, pressure_readings, humidity_readings };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88ddafbc38489166",
+        "type": "function",
+        "z": "6bde268a23e17faf",
+        "name": "applyRangeRules",
+        "func": "let {range_values, readings} = msg.payload;\nlet labelled_readings = [];\nfor(let i =0; i<readings.length; i++){\n    let value = readings[i].value\n    labelled_readings[i] = {value: value, status: getStatus(value, range_values)}\n}\nmsg.payload = labelled_readings;\nreturn msg;\n\nfunction getStatus(value, range_values){\n    const{very_low_max, low_min, low_max, normal_min, normal_max, high_min, high_max, very_high_min}=range_values;\n    if(value <= very_low_max)\n        return \"very low\";\n    if(value >= low_min && value <= low_max)\n        return \"low\";\n    if(value >= normal_min && value <= normal_max)\n        return \"normal\";\n    if(value >= high_min && value <= high_max)\n        return \"high\";\n    if(value >= very_high_min)\n        return \"very_high\";\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "2d04c50b051532d9"
+            ]
+        ]
+    },
+    {
+        "id": "2d04c50b051532d9",
+        "type": "function",
+        "z": "6bde268a23e17faf",
+        "name": "NormalizeData",
+        "func": "//zi = (xi – min(x)) / (max(x) – min(x))\nlet max = -1;\nlet min = 100000000000;\nlet readings = msg.payload;\nfor(let i = 0; i<readings.length; i++){\n    let currentVal = readings[i].value;\n    if(currentVal > max)\n        max=currentVal;\n    if(currentVal < min)\n        min=currentVal;\n}\nlet normalizedValues = readings.map(x => {\n    return{\n        value: (x.value-min)/(max-min),\n        status: x.status\n    }\n});\nmsg.payload = {\n    readings: normalizedValues,\n    min,\n    max\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de565ad94fac0180",
+        "type": "function",
+        "z": "6bde268a23e17faf",
+        "name": "getTemperatureData",
+        "func": "let {range_values, temperature_readings} = msg.payload;\nlet temp_range_values = range_values.find(x => x.variable===\"temperature\");\nmsg.payload ={range_values: temp_range_values, readings: temperature_readings};\nmsg.topic=\"temperature\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "88ddafbc38489166"
+            ]
+        ]
+    },
+    {
+        "id": "d11af3a872894da9",
+        "type": "function",
+        "z": "6bde268a23e17faf",
+        "name": "getHumidityData",
+        "func": "let {range_values, humidity_readings} = msg.payload;\nlet humidity_range_values = range_values.find(x => x.variable===\"humidity\");\nmsg.payload ={range_values: humidity_range_values, readings: humidity_readings};\nmsg.topic=\"humidity\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "88ddafbc38489166"
+            ]
+        ]
+    },
+    {
+        "id": "f973fa1eb70a3c3a",
+        "type": "function",
+        "z": "6bde268a23e17faf",
+        "name": "getPressureData",
+        "func": "let {range_values, pressure_readings} = msg.payload;\nlet pressure_range_values = range_values.find(x => x.variable===\"pressure\");\nmsg.payload ={range_values: pressure_range_values, readings: pressure_readings};\nmsg.topic=\"pressure\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "88ddafbc38489166"
+            ]
+        ]
+    },
+    {
+        "id": "8b19aacb63a6a5b6",
+        "type": "function",
+        "z": "51cab0923b3cdfd1",
+        "name": "Train",
+        "func": "const neuralNetwork = new brain.NeuralNetwork();\nconst data = msg.payload;\nlet preparedData = [];\nfor(let i=0; i<data.length; i++){\n    let inputVal = data[i].value;\n    let outputVal = data[i].status;\n  preparedData.push({input: {t:inputVal}, output: {[outputVal]: 1}});\n}\nneuralNetwork.train(preparedData);\nflow.set(\"neuralNetwork\", neuralNetwork)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66c9f844d6ad1f1f",
+        "type": "switch",
+        "z": "51cab0923b3cdfd1",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "8b19aacb63a6a5b6"
+            ],
+            [
+                "a02a3cb506b1ac53"
+            ]
+        ]
+    },
+    {
+        "id": "a02a3cb506b1ac53",
+        "type": "function",
+        "z": "51cab0923b3cdfd1",
+        "name": "RunModel",
+        "func": "\n//run model\nlet value = msg.payload.normalizedValue\nconst network = flow.get(\"neuralNetwork\");\nif(!network)\n    return msg;\nconst output = network.run({ t: (value) });\n\n//get highest probability\nlet probability = 0, statusClass='';\nfor (let property in output){\n     if(output[property]>probability){\n        probability = output[property];\n        statusClass= property;\n    }\n}\n\nmsg.payload = {\n     probabilities: output,\n     status: statusClass,\n     ...msg.payload\n}\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f332113a57ebb977",
+        "type": "function",
+        "z": "ad8135a6624fbd19",
+        "name": "Train",
+        "func": "const neuralNetwork = new brain.NeuralNetwork();\nconst data = msg.payload;\nlet preparedData = [];\nfor(let i=0; i<data.length; i++){\n    let inputVal = data[i].value;\n    let outputVal = data[i].status;\n  preparedData.push({input: {t:inputVal}, output: {[outputVal]: 1}});\n}\nneuralNetwork.train(preparedData);\nflow.set(\"neuralNetwork\", neuralNetwork)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 650,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42b87ca37fa29888",
+        "type": "switch",
+        "z": "ad8135a6624fbd19",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "f332113a57ebb977"
+            ],
+            [
+                "5d7daa29cf131bbe"
+            ]
+        ]
+    },
+    {
+        "id": "5d7daa29cf131bbe",
+        "type": "function",
+        "z": "ad8135a6624fbd19",
+        "name": "RunModel",
+        "func": "\n//run model\nlet value = msg.payload.normalizedValue\nconst network = flow.get(\"neuralNetwork\");\nif(!network)\n    return msg;\nconst output = network.run({ t: (value) });\n\n//get highest probability\nlet probability = 0, statusClass='';\nfor (let property in output){\n     if(output[property]>probability){\n        probability = output[property];\n        statusClass= property;\n    }\n}\n\nmsg.payload = {\n     probabilities: output,\n     status: statusClass,\n     ...msg.payload\n}\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78c8932883973835",
+        "type": "function",
+        "z": "02f2c978721b1b05",
+        "name": "Train",
+        "func": "const neuralNetwork = new brain.NeuralNetwork();\nconst data = msg.payload;\nlet preparedData = [];\nfor(let i=0; i<data.length; i++){\n    let inputVal = data[i].value;\n    let outputVal = data[i].status;\n  preparedData.push({input: {t:inputVal}, output: {[outputVal]: 1}});\n}\nneuralNetwork.train(preparedData);\nflow.set(\"neuralNetwork\", neuralNetwork)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "brain",
+                "module": "brain.js"
+            }
+        ],
+        "x": 630,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "188a72dffbefc133",
+        "type": "switch",
+        "z": "02f2c978721b1b05",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "78c8932883973835"
+            ],
+            [
+                "6661cc1f8b583ed4"
+            ]
+        ]
+    },
+    {
+        "id": "6661cc1f8b583ed4",
+        "type": "function",
+        "z": "02f2c978721b1b05",
+        "name": "RunModel",
+        "func": "\n//run model\nlet value = msg.payload.normalizedValue\nconst network = flow.get(\"neuralNetwork\");\nif(!network)\n    return msg;\nconst output = network.run({ t: (value) });\n\n//get highest probability\nlet probability = 0, statusClass='';\nfor (let property in output){\n     if(output[property]>probability){\n        probability = output[property];\n        statusClass= property;\n    }\n}\n\nmsg.payload = {\n     probabilities: output,\n     status: statusClass,\n     ...msg.payload\n}\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8dca42bdf74c7c6a",
+        "type": "function",
+        "z": "6282415b8a339d0d",
+        "name": "",
+        "func": "let max = -1;\nlet min = 100000000000;\nlet readings = msg.payload;\nfor(let i = 0; i<readings.length; i++){\n    let currentVal = readings[i].value;\n    if(currentVal > max)\n        max=currentVal;\n    if(currentVal < min)\n        min=currentVal;\n}\nmsg.payload ={readings, min, max}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ef48e35c504b6c4",
+        "type": "function",
+        "z": "97c34c3cf3ec4a93",
+        "name": "",
+        "func": "const {min, max, value} = msg.payload;\nlet normalizedValue =(value-min)/(max-min);\nmsg.payload = {\n    normalizedValue,\n    max,\n    min,\n    ...msg.payload,\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0c8845731508ab7e",
+        "type": "function",
+        "z": "3eea6da9acd67980",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n\n\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = Matrix.columnVector(targetDataArray);\n\n\n// We will train our model.\nconst logreg = new LogisticRegression({ numSteps: 1000, learningRate: 5e-3 });\nlogreg.train(X, Y);\n\nflow.set(\"logRegModel\", logreg)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 590,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01f409f9b65871fc",
+        "type": "switch",
+        "z": "3eea6da9acd67980",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "0c8845731508ab7e"
+            ],
+            [
+                "4cb6c2ef85e9559a"
+            ]
+        ]
+    },
+    {
+        "id": "4cb6c2ef85e9559a",
+        "type": "function",
+        "z": "3eea6da9acd67980",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst logreg = flow.get(\"logRegModel\")\nconst finalResults = logreg.predict(Xtest);\n\nmsg.payload = {\n    algorithm: \"LogisticRegression\",\n    result: finalResults\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 580,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "892edc1de4588edb",
+        "type": "file in",
+        "z": "b1942cd0e3fb69cc",
+        "name": "ReadFile",
+        "filename": "D:/University/Masters Education/Semester IV/dev/data2.csv",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "b6cc87397df25997"
+            ]
+        ]
+    },
+    {
+        "id": "b6cc87397df25997",
+        "type": "join",
+        "z": "b1942cd0e3fb69cc",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "f7dd62e8ce3bc4e2"
+            ]
+        ]
+    },
+    {
+        "id": "f7dd62e8ce3bc4e2",
+        "type": "csv",
+        "z": "b1942cd0e3fb69cc",
+        "name": "",
+        "sep": ";",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "1",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 790,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bfb105564acf6b2f",
+        "type": "switch",
+        "z": "65bb01d7a33d3a8f",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "c1d05b1affdb809c"
+            ],
+            [
+                "d2a3b63e8dd38a3d"
+            ]
+        ]
+    },
+    {
+        "id": "c1d05b1affdb809c",
+        "type": "function",
+        "z": "65bb01d7a33d3a8f",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\n\n// assuming that you created Xtrain, Xtest, Ytrain, Ytest\nconst { MultinomialNB, GaussianNB  } = mlNaiveBayes;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target-1)\n}\n\n// Our training set (X,Y).\n//const X = featuresDataArray;\n//const Y = targetDataArray;\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\nvar model = new MultinomialNB();\nmodel.train(X, Y);\n\n\nflow.set(\"naiveBayesModel\", model)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "mlNaiveBayes",
+                "module": "ml-naivebayes"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 610,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2a3b63e8dd38a3d",
+        "type": "function",
+        "z": "65bb01d7a33d3a8f",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n//const Ytest = Matrix.columnVector([1]);\nconst model = flow.get(\"naiveBayesModel\")\nvar predictions = model.predict(Xtest);\n\nmsg.payload = predictions\nmsg.payload = {\n    algorithm: \"NaiveBayes\",\n    result: predictions\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 600,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4b47f19ee854893",
+        "type": "switch",
+        "z": "9566982d40e572b6",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "3724bacfe4d54a7e"
+            ],
+            [
+                "9728f44b22a7540a"
+            ]
+        ]
+    },
+    {
+        "id": "3724bacfe4d54a7e",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\nconst { DecisionTreeClassifier} = mlCart;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\n\nconst options = {\n  gainFunction: 'gini',\n  maxDepth: 10,\n  minNumSamples: 3,\n};\n\nconst classifier = new DecisionTreeClassifier(options);\nclassifier.train(X, Y);\n\nflow.set(\"dTModel\", classifier)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            },
+            {
+                "var": "mlCart",
+                "module": "ml-cart"
+            }
+        ],
+        "x": 630,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9728f44b22a7540a",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"dTModel\")\nlet result = \"\"\ntry{\n   result = classifier.predict(Xtest); \n}catch(e){\n    \n}\n\nmsg.payload = {\n    algorithm: \"DecisionTree\",\n    result: result\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 620,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f52fea48342cd315",
+        "type": "switch",
+        "z": "b4fdd94459dced40",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "dda5b3c2d284cf44"
+            ],
+            [
+                "d5b4c830e42d2a81"
+            ]
+        ]
+    },
+    {
+        "id": "dda5b3c2d284cf44",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\nconst { RandomForestClassifier } = mlRandomForest;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\n\n\nconst options = {\n  seed: 3,\n  maxFeatures: 0.8,\n  replacement: true,\n  nEstimators: 25\n};\n\nconst classifier = new RandomForestClassifier(options);\nclassifier.train(X, Y);\n\nflow.set(\"rfModel\", classifier)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            },
+            {
+                "var": "mlRandomForest",
+                "module": "ml-random-forest"
+            }
+        ],
+        "x": 630,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5b4c830e42d2a81",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"rfModel\");\nlet result = \"\"\ntry{\n   result = classifier.predict(Xtest); \n}catch(e){\n    \n}\n\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result: result\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 620,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "703b133052607889",
+        "type": "subflow:3eea6da9acd67980",
+        "z": "a2f8739eef20117c",
+        "name": "LogisticRegressionModel",
+        "x": 950,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1820a793dd0a7c1",
+        "type": "subflow:65bb01d7a33d3a8f",
+        "z": "a2f8739eef20117c",
+        "name": "",
+        "x": 930,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7e75bb5281f126b",
+        "type": "subflow:b4fdd94459dced40",
+        "z": "a2f8739eef20117c",
+        "name": "",
+        "x": 940,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df8dd4506a3b1dc5",
+        "type": "subflow:9566982d40e572b6",
+        "z": "a2f8739eef20117c",
+        "name": "",
+        "x": 930,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3397414a01bb12a0",
+        "type": "subflow:b1942cd0e3fb69cc",
+        "z": "a66c82f3cadc8b79",
+        "name": "ReadFileData",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "6e7b57368ad58d0e"
+            ]
+        ]
+    },
+    {
+        "id": "6e7b57368ad58d0e",
+        "type": "function",
+        "z": "a66c82f3cadc8b79",
+        "name": "splitMLData",
+        "func": "//let arrayData = msg.payload;\nif(!Array.isArray(msg.payload))\n    return [msg, msg];\nlet arrayData = msg.payload; //[1, 2, 3, 4, 5, 6, 7, 8];\nlet cutOffPoint = Math.floor(arrayData.length*0.999)\nlet firstArray = arrayData.slice(0, cutOffPoint);\nlet secondArray = arrayData.slice(cutOffPoint);\nlet msg1={}, msg2={};\nmsg1.payload = firstArray;\nmsg2.payload = secondArray;\nreturn [msg1, msg2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "239fd604d456a852"
+            ],
+            [
+                "30b2907edc8ed1e9"
+            ]
+        ]
+    },
+    {
+        "id": "239fd604d456a852",
+        "type": "change",
+        "z": "a66c82f3cadc8b79",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "init",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30b2907edc8ed1e9",
+        "type": "function",
+        "z": "a66c82f3cadc8b79",
+        "name": "storeTestData",
+        "func": "global.set(\"testData\", msg.payload)\nreturn msg;",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "93ef18d411c368af",
+        "type": "function",
+        "z": "d022eb2b56d54e12",
+        "name": "RunTests",
+        "func": "const testData = global.get(\"testData\")\nlet index = flow.get(\"indexData\")\nif(index == testData.length)\n    index=0;\n\nlet dataObj = testData[index]\nvar newDataObj = {};\nfor(var property in dataObj) {\n      newDataObj[property] = dataObj[property];\n}\nlet keys = Object.keys(newDataObj)\ndelete newDataObj[keys[keys.length-1]]\n\nindex++;\nflow.set(\"indexData\", index)\n\nmsg.payload = newDataObj\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"indexData\",0)",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [
+                "9591ec4dfefcc018",
+                "ab81ad1fb3961912"
+            ]
+        ]
+    },
+    {
+        "id": "ace854d5c23f4448",
+        "type": "subflow:a66c82f3cadc8b79",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8908994348a8c6df",
+        "type": "switch",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "ace854d5c23f4448"
+            ],
+            [
+                "93ef18d411c368af"
+            ]
+        ]
+    },
+    {
+        "id": "9591ec4dfefcc018",
+        "type": "function",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "func": "const testData = global.get(\"testData\")\nmsg.payload = testData\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "42853f89231a81ed"
+            ]
+        ]
+    },
+    {
+        "id": "42853f89231a81ed",
+        "type": "debug",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ab81ad1fb3961912",
+        "type": "debug",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "44ab2a38f37bf496",
+        "type": "mysql",
+        "z": "bbfee7aa91eb9f81",
+        "d": true,
+        "mydb": "ca8819eba79088f2",
+        "name": "EdgeComputingDB",
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "671826a37168ccd5"
+            ]
+        ]
+    },
+    {
+        "id": "f65f29bbb0243219",
+        "type": "inject",
+        "z": "bbfee7aa91eb9f81",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "92746096f6846f3a"
+            ]
+        ]
+    },
+    {
+        "id": "671826a37168ccd5",
+        "type": "debug",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "92746096f6846f3a",
+        "type": "function",
+        "z": "bbfee7aa91eb9f81",
+        "d": true,
+        "name": "",
+        "func": "msg.topic=\"select * from temperature_readings\";\nmsg.payload={};\n// msg.payload=['testnode-red6', new Date(), 3];\n// msg.topic=\"INSERT INTO machine_data (`machine_name`, `fault_date`, `level`) VALUES (?, ?, ?);\"\n//msg.payload=['testnode-red6', new Date(), 3];\n//msg.topic=\"INSERT INTO machine_data (`sensor_id`, `value`, `time`,`qos`) VALUES (?, ?, ?, ?);\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "44ab2a38f37bf496",
+                "0442e5b247a3b288"
+            ]
+        ]
+    },
+    {
+        "id": "0442e5b247a3b288",
+        "type": "debug",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "cc87382b75b18cfe",
+        "type": "inject",
+        "z": "bbfee7aa91eb9f81",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 660,
+        "wires": [
+            [
+                "817f564798c70440"
+            ]
+        ]
+    },
+    {
+        "id": "ccf84f1cb7ebefb2",
+        "type": "debug",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0841f2432635189b",
+        "type": "function",
+        "z": "bbfee7aa91eb9f81",
+        "name": "getValues",
+        "func": "let readingsArray = msg.payload.map(row => row.value)\nmsg = {};\nmsg.payload = readingsArray;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 660,
+        "wires": [
+            [
+                "5f29f7baa7ddcca2"
+            ]
+        ]
+    },
+    {
+        "id": "5f29f7baa7ddcca2",
+        "type": "function",
+        "z": "bbfee7aa91eb9f81",
+        "name": "NormalizeData",
+        "func": "//zi = (xi – min(x)) / (max(x) – min(x))\nlet max = -1;\nlet min = 100000000000;\nlet values = msg.payload;\nfor(let i = 0; i<values.length; i++){\n    let currentVal = values[i];\n    if(currentVal > max)\n        max=currentVal;\n    if(currentVal < min)\n        min=currentVal;\n}\nlet normalizedValues = values.map(x => (x-min)/(max-min))\nmsg.payload = normalizedValues\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 660,
+        "wires": [
+            [
+                "ccf84f1cb7ebefb2"
+            ]
+        ]
+    },
+    {
+        "id": "817f564798c70440",
+        "type": "function",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "func": "msg.payload = [{a: \"hello1\", value: 1},\n{b: \"hello2\", value: 2 }, \n{c: \"hello3\", value: 5 },\n{d: \"hello4\", value: 10 }]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "0841f2432635189b"
+            ]
+        ]
+    },
+    {
+        "id": "88f4330947e0ea9c",
+        "type": "inject",
+        "z": "bbfee7aa91eb9f81",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "a492dea942bde001"
+            ]
+        ]
+    },
+    {
+        "id": "a492dea942bde001",
+        "type": "json",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "9cd0c587d57b41ad"
+            ]
+        ]
+    },
+    {
+        "id": "9cd0c587d57b41ad",
+        "type": "function",
+        "z": "bbfee7aa91eb9f81",
+        "name": "savetoDatabase",
+        "func": "\nlet table = msg.topic + \"_readings\";\nlet {id, value, time} = msg.payload;\nlet newMsg ={}\nnewMsg.payload=[id, value, new Date(time), msg.qos];\nnewMsg.topic=\"INSERT INTO \"+ table + \"(`sensor_id`, `value`, `time`,`qos`) VALUES (?, ?, ?, ?);\"\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "292c8c7a4374c8c3"
+            ]
+        ]
+    },
+    {
+        "id": "292c8c7a4374c8c3",
+        "type": "debug",
+        "z": "bbfee7aa91eb9f81",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0cd79df9837f92d2",
+        "type": "inject",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "aebd38fbbbe91a45"
+            ]
+        ]
+    },
+    {
+        "id": "aebd38fbbbe91a45",
+        "type": "change",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "init",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "4facead34f5e16dd"
+            ]
+        ]
+    },
+    {
+        "id": "4facead34f5e16dd",
+        "type": "subflow:d022eb2b56d54e12",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "04c2a93bce22abea"
+            ]
+        ]
+    },
+    {
+        "id": "a505a51aefa132eb",
+        "type": "inject",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "4facead34f5e16dd"
+            ]
+        ]
+    },
+    {
+        "id": "04c2a93bce22abea",
+        "type": "subflow:a2f8739eef20117c",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "cfc189c53bcf3cec"
+            ]
+        ]
+    },
+    {
+        "id": "cfc189c53bcf3cec",
+        "type": "debug",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "78525a1a46c52b80",
+        "type": "subflow:6d6e135720f54223",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "24373fb429d3444f"
+            ],
+            [
+                "24373fb429d3444f"
+            ],
+            [
+                "24373fb429d3444f"
+            ]
+        ]
+    },
+    {
+        "id": "24373fb429d3444f",
+        "type": "subflow:bffcdad394c856f6",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "57a0e01e171282de"
+            ]
+        ]
+    },
+    {
+        "id": "57a0e01e171282de",
+        "type": "subflow:ea34a77b88c038b0",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    }
+]

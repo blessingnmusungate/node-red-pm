@@ -1,12 +1,24 @@
 {
-    "name": "node-red-pm-simulation",
+    "name": "node-red-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
-    "node-red": {
+    "private": true,
+    "dependencies": {
+        "brain.js": "^2.0.0-beta.4",
+        "ml-cart": "^2.1.1",
+        "ml-logistic-regression": "^2.0.0",
+        "ml-matrix": "^6.10.4",
+        "ml-naivebayes": "^4.0.0",
+        "ml-random-forest": "^2.1.0",
+        "ml-regression-simple-linear": "^2.0.3",
+        "node-red-contrib-aedes": "~0.6.0",
+        "node-red-contrib-machine-learning": "~1.0.8",
+        "node-red-node-mysql": "~1.0.0"
+    },
+	"node-red": {
         "settings": {
-            "flowFile": "flow.json",
-            "credentialsFile": "flow_cred.json"
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
         }
     }
 }
