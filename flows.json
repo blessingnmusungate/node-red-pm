@@ -648,43 +648,25 @@
         "category": "",
         "in": [
             {
-                "x": 400,
-                "y": 540,
+                "x": 200,
+                "y": 560,
                 "wires": [
                     {
-                        "id": "703b133052607889"
+                        "id": "9d3695f45eed3411"
                     },
                     {
-                        "id": "a1820a793dd0a7c1"
-                    },
-                    {
-                        "id": "b7e75bb5281f126b"
-                    },
-                    {
-                        "id": "df8dd4506a3b1dc5"
+                        "id": "2a5d627829de1720"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 1260,
-                "y": 480,
+                "x": 1020,
+                "y": 460,
                 "wires": [
                     {
-                        "id": "703b133052607889",
-                        "port": 0
-                    },
-                    {
-                        "id": "a1820a793dd0a7c1",
-                        "port": 0
-                    },
-                    {
-                        "id": "df8dd4506a3b1dc5",
-                        "port": 0
-                    },
-                    {
-                        "id": "b7e75bb5281f126b",
+                        "id": "587be0b3d2b1ddcf",
                         "port": 0
                     }
                 ]
@@ -746,8 +728,8 @@
         ],
         "out": [
             {
-                "x": 760,
-                "y": 200,
+                "x": 820,
+                "y": 180,
                 "wires": [
                     {
                         "id": "ace854d5c23f4448",
@@ -760,6 +742,97 @@
                 ]
             }
         ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0d48d6ca863e9e31",
+        "type": "subflow",
+        "name": "MLAlgorithms",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "d8f08977542c48ed"
+                    },
+                    {
+                        "id": "fdadfbd956995785"
+                    },
+                    {
+                        "id": "f81a16e12c670b5a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 640,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "a0cd6f746a5e2f92",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "f81a16e12c670b5a",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 340,
+                "wires": [
+                    {
+                        "id": "fdadfbd956995785",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 640,
+                "y": 460,
+                "wires": [
+                    {
+                        "id": "d8f08977542c48ed",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "32374ce96bb10d12",
+        "type": "subflow",
+        "name": "Display",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "2c5e89f451460a09"
+                    }
+                ]
+            }
+        ],
+        "out": [],
         "env": [],
         "meta": {},
         "color": "#DDAA99"
@@ -799,6 +872,228 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": ""
+    },
+    {
+        "id": "72ef596c746ab62c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "89d57ef6b0c6a87d",
+        "type": "ui_group",
+        "z": "a2f8739eef20117c",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a297c36cb8b6a85",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "695a5728f1b1bf19",
+        "type": "ui_group",
+        "name": "Actions",
+        "tab": "1a297c36cb8b6a85",
+        "order": 1,
+        "disp": true,
+        "width": 2,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "285a4a1d9a259f1c",
+        "type": "ui_group",
+        "name": "Predicitions",
+        "tab": "1a297c36cb8b6a85",
+        "order": 5,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9b65166c46416877",
+        "type": "ui_group",
+        "z": "32374ce96bb10d12",
+        "name": "Data",
+        "tab": "1a297c36cb8b6a85",
+        "order": 3,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ea7d5821abb0afd",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7c33ec7c08609ca4",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "57ee9ccbed5cab2c",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fea0ee906730e9f9",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "779831697e9e98e5",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d8bf69bdcd05ccf8",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 10,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "60cfd03b7fcc7745",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 12,
+        "width": 8,
+        "height": 1
     },
     {
         "id": "1b26083b424b6925",
@@ -2059,7 +2354,7 @@
         "type": "file in",
         "z": "b1942cd0e3fb69cc",
         "name": "ReadFile",
-        "filename": "D:/University/Masters Education/Semester IV/dev/data2.csv",
+        "filename": "D:/University/Masters Education/Semester IV/dev/data_beautified_streamlined2random.csv",
         "format": "lines",
         "chunk": false,
         "sendError": false,
@@ -2102,7 +2397,7 @@
         "type": "csv",
         "z": "b1942cd0e3fb69cc",
         "name": "",
-        "sep": ";",
+        "sep": ",",
         "hdrin": false,
         "hdrout": "none",
         "multi": "mult",
@@ -2178,7 +2473,7 @@
         "type": "function",
         "z": "65bb01d7a33d3a8f",
         "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n//const Ytest = Matrix.columnVector([1]);\nconst model = flow.get(\"naiveBayesModel\")\nvar predictions = model.predict(Xtest);\n\nmsg.payload = predictions\nmsg.payload = {\n    algorithm: \"NaiveBayes\",\n    result: predictions\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n//const Ytest = Matrix.columnVector([1]);\nconst model = flow.get(\"naiveBayesModel\")\nvar predictions = model.predict(Xtest);\n\nmsg.payload = predictions\nmsg.payload = {\n    algorithm: \"NaiveBayes\",\n    result: predictions+1\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
@@ -2362,47 +2657,72 @@
         ]
     },
     {
-        "id": "703b133052607889",
-        "type": "subflow:3eea6da9acd67980",
-        "z": "a2f8739eef20117c",
-        "name": "LogisticRegressionModel",
-        "x": 950,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a1820a793dd0a7c1",
-        "type": "subflow:65bb01d7a33d3a8f",
+        "id": "9b9886ea365515a2",
+        "type": "subflow:0d48d6ca863e9e31",
         "z": "a2f8739eef20117c",
         "name": "",
-        "x": 930,
+        "x": 580,
         "y": 460,
         "wires": [
-            []
+            [
+                "587be0b3d2b1ddcf"
+            ],
+            [
+                "587be0b3d2b1ddcf"
+            ],
+            [
+                "587be0b3d2b1ddcf"
+            ],
+            [
+                "587be0b3d2b1ddcf"
+            ]
         ]
     },
     {
-        "id": "b7e75bb5281f126b",
-        "type": "subflow:b4fdd94459dced40",
+        "id": "587be0b3d2b1ddcf",
+        "type": "function",
         "z": "a2f8739eef20117c",
         "name": "",
-        "x": 940,
-        "y": 580,
+        "func": "if(!msg.payload.result)\n    return msg\nconst result = msg.payload.result[0];\nvar result_class = \"\"\nswitch(result){\n    case 1: \n        result_class = \"bad\";\n        break;\n    case 2: \n        result_class = \"acceptable\";\n        break;\n    case 3: \n        result_class = \"ideal\";\n        break;\n    case 4: \n        result_class = \"inefficient\";\n        break;\n}\nmsg.payload={\n    ...msg.payload,\n    result_class\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 460,
         "wires": [
-            []
+            [
+                "9d3695f45eed3411"
+            ]
         ]
     },
     {
-        "id": "df8dd4506a3b1dc5",
-        "type": "subflow:9566982d40e572b6",
+        "id": "9d3695f45eed3411",
+        "type": "subflow:32374ce96bb10d12",
         "z": "a2f8739eef20117c",
         "name": "",
-        "x": 930,
-        "y": 680,
+        "x": 920,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "2a5d627829de1720",
+        "type": "function",
+        "z": "a2f8739eef20117c",
+        "name": "DeleteClassAttr",
+        "func": "if(msg.init)\n    return msg;\n\nlet newDataObj = msg.payload;\nlet keys = Object.keys(newDataObj)\ndelete newDataObj[keys[keys.length-1]]\nmsg.payload = newDataObj\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 460,
         "wires": [
-            []
+            [
+                "9b9886ea365515a2"
+            ]
         ]
     },
     {
@@ -2423,7 +2743,7 @@
         "type": "function",
         "z": "a66c82f3cadc8b79",
         "name": "splitMLData",
-        "func": "//let arrayData = msg.payload;\nif(!Array.isArray(msg.payload))\n    return [msg, msg];\nlet arrayData = msg.payload; //[1, 2, 3, 4, 5, 6, 7, 8];\nlet cutOffPoint = Math.floor(arrayData.length*0.999)\nlet firstArray = arrayData.slice(0, cutOffPoint);\nlet secondArray = arrayData.slice(cutOffPoint);\nlet msg1={}, msg2={};\nmsg1.payload = firstArray;\nmsg2.payload = secondArray;\nreturn [msg1, msg2];",
+        "func": "//let arrayData = msg.payload;\nif(!Array.isArray(msg.payload))\n    return [msg, msg];\nlet arrayData = msg.payload; //[1, 2, 3, 4, 5, 6, 7, 8];\nlet cutOffPoint = Math.floor(arrayData.length*0.6)\nlet firstArray = arrayData.slice(0, cutOffPoint);\nlet secondArray = arrayData.slice(cutOffPoint);\nlet msg1={}, msg2={};\nmsg1.payload = firstArray;\nmsg2.payload = secondArray;\nreturn [msg1, msg2];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -2485,18 +2805,17 @@
         "type": "function",
         "z": "d022eb2b56d54e12",
         "name": "RunTests",
-        "func": "const testData = global.get(\"testData\")\nlet index = flow.get(\"indexData\")\nif(index == testData.length)\n    index=0;\n\nlet dataObj = testData[index]\nvar newDataObj = {};\nfor(var property in dataObj) {\n      newDataObj[property] = dataObj[property];\n}\nlet keys = Object.keys(newDataObj)\ndelete newDataObj[keys[keys.length-1]]\n\nindex++;\nflow.set(\"indexData\", index)\n\nmsg.payload = newDataObj\nreturn msg;",
+        "func": "const testData = global.get(\"testData\")\nlet index = flow.get(\"indexData\")\nif(index == testData.length)\n    index=0;\n\nlet dataObj = testData[index]\nvar newDataObj = {};\nfor(var property in dataObj) {\n      newDataObj[property] = dataObj[property];\n}\n//let keys = Object.keys(newDataObj)\n//delete newDataObj[keys[keys.length-1]]\n\nindex++;\nflow.set(\"indexData\", index)\n\nmsg.payload = newDataObj;\nmsg.data_id = index -1;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"indexData\",0)",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 220,
+        "x": 620,
+        "y": 460,
         "wires": [
             [
-                "9591ec4dfefcc018",
-                "ab81ad1fb3961912"
+                "9591ec4dfefcc018"
             ]
         ]
     },
@@ -2505,8 +2824,8 @@
         "type": "subflow:a66c82f3cadc8b79",
         "z": "d022eb2b56d54e12",
         "name": "",
-        "x": 410,
-        "y": 80,
+        "x": 510,
+        "y": 60,
         "wires": [
             []
         ]
@@ -2529,14 +2848,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 250,
+        "x": 210,
         "y": 160,
         "wires": [
             [
                 "ace854d5c23f4448"
             ],
             [
-                "93ef18d411c368af"
+                "f07696aec2febecf"
             ]
         ]
     },
@@ -2551,44 +2870,552 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 340,
+        "x": 860,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f3664ab827ee4fe",
+        "type": "delay",
+        "z": "d022eb2b56d54e12",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 180,
+        "y": 460,
         "wires": [
             [
-                "42853f89231a81ed"
+                "93ef18d411c368af"
             ]
         ]
     },
     {
-        "id": "42853f89231a81ed",
-        "type": "debug",
+        "id": "f07696aec2febecf",
+        "type": "function",
         "z": "d022eb2b56d54e12",
+        "name": "generate msgnumber  limit",
+        "func": "for(let i=0; i<300;i++){\n   node.send(msg);\n}\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "8f3664ab827ee4fe"
+            ]
+        ]
+    },
+    {
+        "id": "a0cd6f746a5e2f92",
+        "type": "subflow:3eea6da9acd67980",
+        "z": "0d48d6ca863e9e31",
+        "name": "LogisticRegressionModel",
+        "x": 350,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f81a16e12c670b5a",
+        "type": "subflow:65bb01d7a33d3a8f",
+        "z": "0d48d6ca863e9e31",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdadfbd956995785",
+        "type": "subflow:b4fdd94459dced40",
+        "z": "0d48d6ca863e9e31",
+        "name": "",
+        "x": 320,
         "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8f08977542c48ed",
+        "type": "subflow:9566982d40e572b6",
+        "z": "0d48d6ca863e9e31",
+        "name": "",
+        "x": 310,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c5e89f451460a09",
+        "type": "switch",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "2eac076dd365aa4b",
+                "e5218b6544f2f1c5"
+            ],
+            [
+                "ba33277a4b65acde"
+            ]
+        ]
+    },
+    {
+        "id": "27e144d452529ab2",
+        "type": "ui_gauge",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "285a4a1d9a259f1c",
+        "order": 11,
+        "width": 4,
+        "height": 2,
+        "gtype": "gage",
+        "title": "DT",
+        "label": "quality_class",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#b30000",
+            "#1e4324",
+            "#cbb73a"
+        ],
+        "seg1": "2.5",
+        "seg2": "3.5",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 60,
         "wires": []
     },
     {
-        "id": "ab81ad1fb3961912",
-        "type": "debug",
-        "z": "d022eb2b56d54e12",
+        "id": "2eac076dd365aa4b",
+        "type": "switch",
+        "z": "32374ce96bb10d12",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 670,
+        "property": "payload.algorithm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DecisionTree",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "RandomForest",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "LogisticRegression",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "NaiveBayes",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "98b610e4fd603319"
+            ],
+            [
+                "445c2e294353241a"
+            ],
+            [],
+            [
+                "e6641fe8dad661ba"
+            ]
+        ]
+    },
+    {
+        "id": "ef978d16b6f49014",
+        "type": "ui_gauge",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "285a4a1d9a259f1c",
+        "order": 8,
+        "width": 4,
+        "height": 2,
+        "gtype": "gage",
+        "title": "RF",
+        "label": "quality_class",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#b30000",
+            "#1e4324",
+            "#cbb73a"
+        ],
+        "seg1": "2.5",
+        "seg2": "3.5",
+        "diff": false,
+        "className": "",
+        "x": 890,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "98b610e4fd603319",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "SetTopic",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"DT\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 120,
+        "wires": [
+            [
+                "8f1072204a71175a",
+                "ef978d16b6f49014",
+                "27e144d452529ab2"
+            ]
+        ]
+    },
+    {
+        "id": "445c2e294353241a",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "SetTopic",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"RF\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "ef978d16b6f49014",
+                "8f1072204a71175a"
+            ]
+        ]
+    },
+    {
+        "id": "8f1072204a71175a",
+        "type": "ui_chart",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "285a4a1d9a259f1c",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "4",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1230,
         "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5218b6544f2f1c5",
+        "type": "switch",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "property": "payload.algorithm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "b74229e80d4684f1",
+                "42ea70fbbcf4243b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "060ff6a390e47554",
+        "type": "ui_table",
+        "z": "32374ce96bb10d12",
+        "group": "9b65166c46416877",
+        "name": "Real Time Data",
+        "order": 1,
+        "width": 14,
+        "height": 7,
+        "columns": [
+            {
+                "field": "id",
+                "title": "id",
+                "width": "10px",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "meltTemp",
+                "title": "MeltTemp",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "moldTemp",
+                "title": "MoldTemp",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "pressure",
+                "title": "Pressure",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "fillingTime",
+                "title": "FillingTime",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "plastTime",
+                "title": "PlastTime",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "cycleTime",
+                "title": "CycleTime",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 660,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b74229e80d4684f1",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "AddToTable",
+        "func": "const data = msg.payload;\nreturn {\"payload\":{\n    \"command\":\"addData\",\n    \"arguments\":[\n        {\n            \"meltTemp\":data.col1,\n            \"moldTemp\":data.col2,\n            \"fillingTime\":data.col3,\n            \"plastTime\":data.col4,\n            \"cycleTime\":data.col5,\n            \"pressure\":data.col6,\n            \"id\":msg.data_id\n        },\n        true\n    ],\n    \"returnPromise\":true\n    }\n}\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "060ff6a390e47554"
+            ]
+        ]
+    },
+    {
+        "id": "77d1b0ef9f345556",
+        "type": "ui_gauge",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "285a4a1d9a259f1c",
+        "order": 5,
+        "width": 4,
+        "height": 2,
+        "gtype": "gage",
+        "title": "NB",
+        "label": "quality_class",
+        "format": "{{msg.payload}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#b30000",
+            "#1e4324",
+            "#cbb73a"
+        ],
+        "seg1": "2.5",
+        "seg2": "3.5",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e6641fe8dad661ba",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "SetTopic",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"NB\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "77d1b0ef9f345556",
+                "8f1072204a71175a"
+            ]
+        ]
+    },
+    {
+        "id": "083ba69d218a0ecd",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Real Class:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 870,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "42ea70fbbcf4243b",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "ExtractClass",
+        "func": "let dataObj = msg.payload;\nlet keys = Object.keys(dataObj)\nmsg.payload = dataObj[keys[keys.length-1]]\nmsg.topic = \"real\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 480,
+        "wires": [
+            [
+                "083ba69d218a0ecd",
+                "8f1072204a71175a"
+            ]
+        ]
+    },
+    {
+        "id": "ba33277a4b65acde",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "695a5728f1b1bf19",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trained:",
+        "format": "{{msg.init}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 120,
+        "y": 320,
         "wires": []
     },
     {
@@ -2874,35 +3701,6 @@
         "wires": []
     },
     {
-        "id": "0cd79df9837f92d2",
-        "type": "inject",
-        "z": "c86eb73a2941d666",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 240,
-        "wires": [
-            [
-                "aebd38fbbbe91a45"
-            ]
-        ]
-    },
-    {
         "id": "aebd38fbbbe91a45",
         "type": "change",
         "z": "c86eb73a2941d666",
@@ -2922,7 +3720,7 @@
         "to": "",
         "reg": false,
         "x": 290,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
                 "4facead34f5e16dd"
@@ -2934,7 +3732,7 @@
         "type": "subflow:d022eb2b56d54e12",
         "z": "c86eb73a2941d666",
         "name": "",
-        "x": 460,
+        "x": 360,
         "y": 340,
         "wires": [
             [
@@ -2943,63 +3741,17 @@
         ]
     },
     {
-        "id": "a505a51aefa132eb",
-        "type": "inject",
-        "z": "c86eb73a2941d666",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 340,
-        "wires": [
-            [
-                "4facead34f5e16dd"
-            ]
-        ]
-    },
-    {
         "id": "04c2a93bce22abea",
         "type": "subflow:a2f8739eef20117c",
         "z": "c86eb73a2941d666",
         "name": "",
-        "x": 650,
+        "x": 610,
         "y": 340,
         "wires": [
             [
-                "cfc189c53bcf3cec"
+                "d66079313af7b211"
             ]
         ]
-    },
-    {
-        "id": "cfc189c53bcf3cec",
-        "type": "debug",
-        "z": "c86eb73a2941d666",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "78525a1a46c52b80",
@@ -3041,5 +3793,78 @@
         "x": 830,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "d66079313af7b211",
+        "type": "debug",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ab5589ea37d8adf0",
+        "type": "ui_button",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "group": "695a5728f1b1bf19",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Train",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "aebd38fbbbe91a45"
+            ]
+        ]
+    },
+    {
+        "id": "e0a4e269ee91f455",
+        "type": "ui_button",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "group": "695a5728f1b1bf19",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Test",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "4facead34f5e16dd"
+            ]
+        ]
     }
 ]
