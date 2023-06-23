@@ -393,7 +393,7 @@
         ],
         "out": [
             {
-                "x": 840,
+                "x": 960,
                 "y": 260,
                 "wires": [
                     {
@@ -401,7 +401,7 @@
                         "port": 0
                     },
                     {
-                        "id": "d2a3b63e8dd38a3d",
+                        "id": "f2e0a3707eacf780",
                         "port": 0
                     }
                 ]
@@ -419,8 +419,8 @@
         "category": "",
         "in": [
             {
-                "x": 120,
-                "y": 300,
+                "x": 220,
+                "y": 260,
                 "wires": [
                     {
                         "id": "b4b47f19ee854893"
@@ -430,15 +430,15 @@
         ],
         "out": [
             {
-                "x": 900,
-                "y": 280,
+                "x": 960,
+                "y": 300,
                 "wires": [
                     {
                         "id": "3724bacfe4d54a7e",
                         "port": 0
                     },
                     {
-                        "id": "9728f44b22a7540a",
+                        "id": "1d1152357aa8a138",
                         "port": 0
                     }
                 ]
@@ -456,7 +456,7 @@
         "category": "",
         "in": [
             {
-                "x": 140,
+                "x": 80,
                 "y": 280,
                 "wires": [
                     {
@@ -467,15 +467,15 @@
         ],
         "out": [
             {
-                "x": 880,
-                "y": 260,
+                "x": 900,
+                "y": 240,
                 "wires": [
                     {
-                        "id": "dda5b3c2d284cf44",
+                        "id": "527bfb297e841285",
                         "port": 0
                     },
                     {
-                        "id": "d5b4c830e42d2a81",
+                        "id": "29dec0497a83edc6",
                         "port": 0
                     }
                 ]
@@ -488,7 +488,7 @@
     {
         "id": "a2f8739eef20117c",
         "type": "subflow",
-        "name": "EdgeNode2",
+        "name": "EdgeNode",
         "info": "",
         "category": "",
         "in": [
@@ -500,7 +500,7 @@
                         "id": "9d3695f45eed3411"
                     },
                     {
-                        "id": "2a5d627829de1720"
+                        "id": "9b9886ea365515a2"
                     }
                 ]
             }
@@ -529,7 +529,7 @@
         "category": "",
         "in": [
             {
-                "x": 120,
+                "x": 40,
                 "y": 180,
                 "wires": [
                     {
@@ -540,7 +540,7 @@
         ],
         "out": [
             {
-                "x": 900,
+                "x": 960,
                 "y": 180,
                 "wires": [
                     {
@@ -557,7 +557,7 @@
     {
         "id": "d022eb2b56d54e12",
         "type": "subflow",
-        "name": "Inputs2",
+        "name": "Inputs",
         "info": "",
         "category": "",
         "in": [
@@ -574,7 +574,7 @@
         "out": [
             {
                 "x": 820,
-                "y": 180,
+                "y": 160,
                 "wires": [
                     {
                         "id": "ace854d5c23f4448",
@@ -603,13 +603,7 @@
                 "y": 220,
                 "wires": [
                     {
-                        "id": "d8f08977542c48ed"
-                    },
-                    {
                         "id": "fdadfbd956995785"
-                    },
-                    {
-                        "id": "f81a16e12c670b5a"
                     }
                 ]
             }
@@ -802,11 +796,11 @@
     {
         "id": "285a4a1d9a259f1c",
         "type": "ui_group",
-        "name": "Predicitions",
+        "name": "Predictions",
         "tab": "1a297c36cb8b6a85",
         "order": 5,
         "disp": true,
-        "width": 12,
+        "width": 6,
         "collapse": false,
         "className": ""
     },
@@ -818,78 +812,98 @@
         "tab": "1a297c36cb8b6a85",
         "order": 3,
         "disp": true,
-        "width": 14,
+        "width": 9,
         "collapse": false,
         "className": ""
     },
     {
-        "id": "3ea7d5821abb0afd",
+        "id": "5ca119a6a6c0717b",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
-        "group": "285a4a1d9a259f1c",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7c33ec7c08609ca4",
-        "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
-        "name": "spacer",
-        "group": "285a4a1d9a259f1c",
+        "group": "9b65166c46416877",
         "order": 4,
         "width": 1,
         "height": 1
     },
     {
-        "id": "57ee9ccbed5cab2c",
+        "id": "07eced0f2e775af7",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
-        "group": "285a4a1d9a259f1c",
+        "group": "9b65166c46416877",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "35f486f96c44b6b3",
+        "type": "ui_spacer",
+        "z": "c86eb73a2941d666",
+        "name": "spacer",
+        "group": "9b65166c46416877",
         "order": 6,
         "width": 1,
         "height": 1
     },
     {
-        "id": "fea0ee906730e9f9",
+        "id": "5db57b0a46fd68a7",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
-        "group": "285a4a1d9a259f1c",
+        "group": "9b65166c46416877",
         "order": 7,
         "width": 1,
         "height": 1
     },
     {
-        "id": "779831697e9e98e5",
+        "id": "95bc5e25a12eda92",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
-        "group": "285a4a1d9a259f1c",
-        "order": 9,
+        "group": "9b65166c46416877",
+        "order": 8,
         "width": 1,
         "height": 1
     },
     {
-        "id": "d8bf69bdcd05ccf8",
+        "id": "71804f2ad837f4f5",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
-        "group": "285a4a1d9a259f1c",
-        "order": 10,
-        "width": 8,
+        "group": "9b65166c46416877",
+        "order": 9,
+        "width": 9,
         "height": 1
     },
     {
-        "id": "60cfd03b7fcc7745",
+        "id": "db89500b4b2468b0",
         "type": "ui_spacer",
-        "z": "32374ce96bb10d12",
+        "z": "c86eb73a2941d666",
         "name": "spacer",
         "group": "285a4a1d9a259f1c",
-        "order": 12,
-        "width": 8,
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a0907781f4689779",
+        "type": "ui_spacer",
+        "z": "c86eb73a2941d666",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "33b6899afc8bad56",
+        "type": "ui_spacer",
+        "z": "c86eb73a2941d666",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 10,
+        "width": 6,
         "height": 1
     },
     {
@@ -1386,7 +1400,7 @@
         "type": "function",
         "z": "3eea6da9acd67980",
         "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst logreg = flow.get(\"logRegModel\")\nconst finalResults = logreg.predict(Xtest);\n\nmsg.payload = {\n    algorithm: \"LogisticRegression\",\n    result: finalResults\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\n\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst logreg = flow.get(\"logRegModel\")\nconst finalResults = logreg.predict(Xtest);\n\nmsg.payload = {\n    algorithm: \"LogisticRegression\",\n    result: finalResults,\n    actual\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
@@ -1412,7 +1426,7 @@
         "type": "file in",
         "z": "b1942cd0e3fb69cc",
         "name": "ReadFile",
-        "filename": "D:/University/Masters Education/Semester IV/dev/data_beautified_streamlined2random.csv",
+        "filename": "data_beautified_withtimestamp.csv",
         "format": "lines",
         "chunk": false,
         "sendError": false,
@@ -1531,7 +1545,7 @@
         "type": "function",
         "z": "65bb01d7a33d3a8f",
         "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n//const Ytest = Matrix.columnVector([1]);\nconst model = flow.get(\"naiveBayesModel\")\nvar predictions = model.predict(Xtest);\n\nmsg.payload = predictions\nmsg.payload = {\n    algorithm: \"NaiveBayes\",\n    result: predictions+1\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual=rowArray.pop();\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n//const Ytest = Matrix.columnVector([1]);\nconst model = flow.get(\"naiveBayesModel\")\nvar predictions = model.predict(Xtest);\nconst resultData = predictions+1;\nconst result =  parseInt(resultData[0])+1\n\nmsg.payload = {\n    algorithm: \"NaiveBayes\",\n    result,\n    actual,\n    testData,\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
@@ -1546,8 +1560,46 @@
                 "module": "ml-matrix"
             }
         ],
-        "x": 600,
-        "y": 380,
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "50cf045f954fd49e"
+            ]
+        ]
+    },
+    {
+        "id": "50cf045f954fd49e",
+        "type": "function",
+        "z": "65bb01d7a33d3a8f",
+        "name": "calculateStats",
+        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "f2e0a3707eacf780"
+            ]
+        ]
+    },
+    {
+        "id": "f2e0a3707eacf780",
+        "type": "function",
+        "z": "65bb01d7a33d3a8f",
+        "name": "addTimeData",
+        "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1570,8 +1622,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 310,
-        "y": 300,
+        "x": 330,
+        "y": 260,
         "wires": [
             [
                 "3724bacfe4d54a7e"
@@ -1601,7 +1653,7 @@
                 "module": "ml-cart"
             }
         ],
-        "x": 630,
+        "x": 550,
         "y": 120,
         "wires": [
             []
@@ -1612,7 +1664,7 @@
         "type": "function",
         "z": "9566982d40e572b6",
         "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\n// We try to predict the test set.\n\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"dTModel\")\nlet result = \"\"\ntry{\n   result = classifier.predict(Xtest); \n}catch(e){\n    \n}\n\nmsg.payload = {\n    algorithm: \"DecisionTree\",\n    result: result\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push( rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n\nconst classifier = flow.get(\"dTModel\")\nlet result = \"\"\ntry{\n   resultData = classifier.predict(Xtest); \n   result = parseInt(resultData[0])\n}catch(e){}\n\nmsg.payload = {\n    algorithm: \"DecisionTree\",\n    result,\n    actual,\n    testData,\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
@@ -1627,8 +1679,46 @@
                 "module": "ml-matrix"
             }
         ],
-        "x": 620,
-        "y": 400,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "6fad0560c049ae6c"
+            ]
+        ]
+    },
+    {
+        "id": "6fad0560c049ae6c",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "calculateStats",
+        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 460,
+        "wires": [
+            [
+                "1d1152357aa8a138"
+            ]
+        ]
+    },
+    {
+        "id": "1d1152357aa8a138",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "addTimeData",
+        "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 420,
         "wires": [
             []
         ]
@@ -1651,11 +1741,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 310,
+        "x": 230,
         "y": 280,
         "wires": [
             [
-                "dda5b3c2d284cf44"
+                "29dec0497a83edc6"
             ],
             [
                 "d5b4c830e42d2a81"
@@ -1663,7 +1753,71 @@
         ]
     },
     {
-        "id": "dda5b3c2d284cf44",
+        "id": "d5b4c830e42d2a81",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"rfModel\");\nlet result = \"\"\ntry{\n   let resultData = classifier.predict(Xtest); \n   result = parseInt(resultData[0])\n}catch(e){\n    \n}\n\n\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result,\n    actual,\n    testData,\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "be2e8afac42cf4ac"
+            ]
+        ]
+    },
+    {
+        "id": "527bfb297e841285",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "addTimeData",
+        "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be2e8afac42cf4ac",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "calculateStats",
+        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "527bfb297e841285"
+            ]
+        ]
+    },
+    {
+        "id": "29dec0497a83edc6",
         "type": "function",
         "z": "b4fdd94459dced40",
         "name": "train",
@@ -1682,34 +1836,8 @@
                 "module": "ml-random-forest"
             }
         ],
-        "x": 630,
+        "x": 470,
         "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d5b4c830e42d2a81",
-        "type": "function",
-        "z": "b4fdd94459dced40",
-        "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"rfModel\");\nlet result = \"\"\ntry{\n   result = classifier.predict(Xtest); \n}catch(e){\n    \n}\n\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result: result\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "LogisticRegression",
-                "module": "ml-logistic-regression"
-            },
-            {
-                "var": "MLMatrix",
-                "module": "ml-matrix"
-            }
-        ],
-        "x": 620,
-        "y": 380,
         "wires": [
             []
         ]
@@ -1741,7 +1869,7 @@
         "type": "function",
         "z": "a2f8739eef20117c",
         "name": "",
-        "func": "if(!msg.payload.result)\n    return msg\nconst result = msg.payload.result[0];\nvar result_class = \"\"\nswitch(result){\n    case 1: \n        result_class = \"bad\";\n        break;\n    case 2: \n        result_class = \"acceptable\";\n        break;\n    case 3: \n        result_class = \"ideal\";\n        break;\n    case 4: \n        result_class = \"inefficient\";\n        break;\n}\nmsg.payload={\n    ...msg.payload,\n    result_class\n}\nreturn msg;",
+        "func": "if(!msg.payload.result)\n    return msg\nconst result = msg.payload.result;\nvar result_class = \"\"\nswitch(result){\n    case 1: \n        result_class = \"bad\";\n        break;\n    case 2: \n        result_class = \"acceptable\";\n        break;\n    case 3: \n        result_class = \"ideal\";\n        break;\n    case 4: \n        result_class = \"inefficient\";\n        break;\n}\nmsg.payload={\n    ...msg.payload,\n    result_class\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1775,12 +1903,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 460,
+        "x": 340,
+        "y": 400,
         "wires": [
-            [
-                "9b9886ea365515a2"
-            ]
+            []
         ]
     },
     {
@@ -1788,11 +1914,11 @@
         "type": "subflow:b1942cd0e3fb69cc",
         "z": "a66c82f3cadc8b79",
         "name": "ReadFileData",
-        "x": 340,
+        "x": 220,
         "y": 180,
         "wires": [
             [
-                "6e7b57368ad58d0e"
+                "616f26459f9db9aa"
             ]
         ]
     },
@@ -1807,7 +1933,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
+        "x": 590,
         "y": 180,
         "wires": [
             [
@@ -1837,7 +1963,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 770,
+        "x": 810,
         "y": 180,
         "wires": [
             []
@@ -1857,6 +1983,25 @@
         "x": 740,
         "y": 280,
         "wires": []
+    },
+    {
+        "id": "616f26459f9db9aa",
+        "type": "function",
+        "z": "a66c82f3cadc8b79",
+        "name": "preprocessData",
+        "func": "if(!Array.isArray(msg.payload))\n    return msg;\nlet arrayData = msg.payload; \n\nfor(let i=0; i<arrayData.length;i++){\n    let row = arrayData[i]\n    let keys = Object.keys(row)\n    /*for(let j=0; j<1;j++){\n        delete row[keys[j]]\n    }*/\n    row[keys[0]] = Date.parse(row[keys[0]])\n    delete row[keys[keys.length-1]]\n}\nmsg.payload = arrayData\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "6e7b57368ad58d0e"
+            ]
+        ]
     },
     {
         "id": "93ef18d411c368af",
@@ -1882,8 +2027,8 @@
         "type": "subflow:a66c82f3cadc8b79",
         "z": "d022eb2b56d54e12",
         "name": "",
-        "x": 510,
-        "y": 60,
+        "x": 470,
+        "y": 160,
         "wires": [
             []
         ]
@@ -1943,7 +2088,7 @@
         "timeout": "10",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "5",
+        "nbRateUnits": "2",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
@@ -2053,34 +2198,6 @@
         ]
     },
     {
-        "id": "27e144d452529ab2",
-        "type": "ui_gauge",
-        "z": "32374ce96bb10d12",
-        "name": "",
-        "group": "285a4a1d9a259f1c",
-        "order": 11,
-        "width": 4,
-        "height": 2,
-        "gtype": "gage",
-        "title": "DT",
-        "label": "quality_class",
-        "format": "{{msg.payload}}",
-        "min": "0",
-        "max": "5",
-        "colors": [
-            "#b30000",
-            "#1e4324",
-            "#cbb73a"
-        ],
-        "seg1": "2.5",
-        "seg2": "3.5",
-        "diff": false,
-        "className": "",
-        "x": 850,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "2eac076dd365aa4b",
         "type": "switch",
         "z": "32374ce96bb10d12",
@@ -2116,63 +2233,38 @@
         "y": 220,
         "wires": [
             [
-                "98b610e4fd603319"
+                "98b610e4fd603319",
+                "0f54ec76956bbc09"
             ],
             [
-                "445c2e294353241a"
+                "445c2e294353241a",
+                "d94319ac3df36781"
             ],
             [],
             [
-                "e6641fe8dad661ba"
+                "e6641fe8dad661ba",
+                "556db27ea5c32866"
             ]
         ]
-    },
-    {
-        "id": "ef978d16b6f49014",
-        "type": "ui_gauge",
-        "z": "32374ce96bb10d12",
-        "name": "",
-        "group": "285a4a1d9a259f1c",
-        "order": 8,
-        "width": 4,
-        "height": 2,
-        "gtype": "gage",
-        "title": "RF",
-        "label": "quality_class",
-        "format": "{{msg.payload}}",
-        "min": "0",
-        "max": "5",
-        "colors": [
-            "#b30000",
-            "#1e4324",
-            "#cbb73a"
-        ],
-        "seg1": "2.5",
-        "seg2": "3.5",
-        "diff": false,
-        "className": "",
-        "x": 890,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "98b610e4fd603319",
         "type": "function",
         "z": "32374ce96bb10d12",
         "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"DT\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"DT\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 120,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
-                "8f1072204a71175a",
-                "ef978d16b6f49014",
-                "27e144d452529ab2"
+                "547498a8476738ba",
+                "97fdfb8824926d09",
+                "f1c453838fd12a7d"
             ]
         ]
     },
@@ -2181,63 +2273,20 @@
         "type": "function",
         "z": "32374ce96bb10d12",
         "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"RF\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"RF\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
+        "x": 660,
         "y": 220,
         "wires": [
             [
-                "ef978d16b6f49014",
-                "8f1072204a71175a"
+                "fb9dbe81e80cba9a",
+                "d345892ae481d72c",
+                "4163e7adf6a837f1"
             ]
-        ]
-    },
-    {
-        "id": "8f1072204a71175a",
-        "type": "ui_chart",
-        "z": "32374ce96bb10d12",
-        "name": "",
-        "group": "285a4a1d9a259f1c",
-        "order": 2,
-        "width": 7,
-        "height": 5,
-        "label": "chart",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": true,
-        "ymin": "0",
-        "ymax": "4",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1230,
-        "y": 280,
-        "wires": [
-            []
         ]
     },
     {
@@ -2258,25 +2307,362 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 290,
-        "y": 440,
+        "x": 310,
+        "y": 480,
         "wires": [
             [
                 "b74229e80d4684f1",
-                "42ea70fbbcf4243b"
+                "42ea70fbbcf4243b",
+                "060fc4c9f40a42e7",
+                "2d40e5a47cd04453",
+                "b48d51c11331957b"
             ],
             []
         ]
     },
     {
+        "id": "b74229e80d4684f1",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "AddToTable",
+        "func": "const data = msg.payload;\nreturn {\"payload\":{\n    \"command\":\"addData\",\n    \"arguments\":[\n        {\n            \"meltTemp\":data.col1,\n            \"moldTemp\":data.col2,\n            \"fillingTime\":data.col3,\n            \"plastTime\":data.col4,\n            \"cycleTime\":data.col5,\n            \"pressure\":data.col6,\n            \"id\":msg.data_id\n        },\n        true\n    ],\n    \"returnPromise\":true\n    }\n}\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "060ff6a390e47554"
+            ]
+        ]
+    },
+    {
+        "id": "e6641fe8dad661ba",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "SetTopic",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"NB\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "44a83984b027a77d",
+                "9f48323529de22ab",
+                "311f9a3798d9286d"
+            ]
+        ]
+    },
+    {
+        "id": "083ba69d218a0ecd",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Real:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "42ea70fbbcf4243b",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "ExtractClass",
+        "func": "let dataObj = msg.payload;\nlet keys = Object.keys(dataObj)\nmsg.payload = dataObj[keys[keys.length-1]]\nmsg.topic = \"real\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "083ba69d218a0ecd"
+            ]
+        ]
+    },
+    {
+        "id": "ba33277a4b65acde",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "695a5728f1b1bf19",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Trained:",
+        "format": "{{msg.init}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 120,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3e78a5e43e6916bb",
+        "type": "ui_chart",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "9b65166c46416877",
+        "order": 2,
+        "width": 9,
+        "height": 5,
+        "label": "TempChart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "060fc4c9f40a42e7",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "func": "const data = msg.payload;\nconst msg1 = {\n    topic: \"meltTemp\",\n    payload :data.col2,\n}\nconst msg2 = {\n    topic: \"moldTemp\",\n    payload :data.col3\n}\n\nnode.send(msg1)\nnode.send(msg2);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "3e78a5e43e6916bb"
+            ]
+        ]
+    },
+    {
+        "id": "e6380dcaf5450944",
+        "type": "ui_chart",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "9b65166c46416877",
+        "order": 3,
+        "width": 8,
+        "height": 5,
+        "label": "PressureChart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00fa00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 880,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5d1e370ea2ce660",
+        "type": "ui_chart",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "group": "9b65166c46416877",
+        "order": 10,
+        "width": 9,
+        "height": 5,
+        "label": "CycleChart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1d26aa",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d40e5a47cd04453",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "func": "const data = msg.payload;\nconst msg1 = {\n    topic: \"pressure\",\n    payload: data.col7\n}\nnode.send(msg1)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "e6380dcaf5450944"
+            ]
+        ]
+    },
+    {
+        "id": "b48d51c11331957b",
+        "type": "function",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "func": "const data = msg.payload;\nconst msg1 = {\n    topic: \"cycleTime\",\n    payload :data.col6,\n}\nnode.send(msg1)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "e5d1e370ea2ce660"
+            ]
+        ]
+    },
+    {
+        "id": "547498a8476738ba",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "DT",
+        "format": "{{msg.payload.result}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 970,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "fb9dbe81e80cba9a",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "RF",
+        "format": "{{msg.payload.result}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "44a83984b027a77d",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "NB",
+        "format": "{{msg.payload.result}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 320,
+        "wires": []
+    },
+    {
         "id": "060ff6a390e47554",
         "type": "ui_table",
         "z": "32374ce96bb10d12",
+        "d": true,
         "group": "9b65166c46416877",
         "name": "Real Time Data",
         "order": 1,
-        "width": 14,
-        "height": 7,
+        "width": 9,
+        "height": 1,
         "columns": [
             {
                 "field": "id",
@@ -2351,129 +2737,162 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 660,
+        "x": 700,
         "y": 380,
         "wires": []
     },
     {
-        "id": "b74229e80d4684f1",
-        "type": "function",
-        "z": "32374ce96bb10d12",
-        "name": "AddToTable",
-        "func": "const data = msg.payload;\nreturn {\"payload\":{\n    \"command\":\"addData\",\n    \"arguments\":[\n        {\n            \"meltTemp\":data.col1,\n            \"moldTemp\":data.col2,\n            \"fillingTime\":data.col3,\n            \"plastTime\":data.col4,\n            \"cycleTime\":data.col5,\n            \"pressure\":data.col6,\n            \"id\":msg.data_id\n        },\n        true\n    ],\n    \"returnPromise\":true\n    }\n}\n//return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 380,
-        "wires": [
-            [
-                "060ff6a390e47554"
-            ]
-        ]
-    },
-    {
-        "id": "77d1b0ef9f345556",
-        "type": "ui_gauge",
-        "z": "32374ce96bb10d12",
-        "name": "",
-        "group": "285a4a1d9a259f1c",
-        "order": 5,
-        "width": 4,
-        "height": 2,
-        "gtype": "gage",
-        "title": "NB",
-        "label": "quality_class",
-        "format": "{{msg.payload}}",
-        "min": "0",
-        "max": "5",
-        "colors": [
-            "#b30000",
-            "#1e4324",
-            "#cbb73a"
-        ],
-        "seg1": "2.5",
-        "seg2": "3.5",
-        "diff": false,
-        "className": "",
-        "x": 870,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "e6641fe8dad661ba",
-        "type": "function",
-        "z": "32374ce96bb10d12",
-        "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"NB\"\nmsg.payload = msg.payload.result[0]\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 660,
-        "y": 280,
-        "wires": [
-            [
-                "77d1b0ef9f345556",
-                "8f1072204a71175a"
-            ]
-        ]
-    },
-    {
-        "id": "083ba69d218a0ecd",
+        "id": "97fdfb8824926d09",
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 3,
-        "width": 4,
+        "order": 4,
+        "width": 2,
         "height": 1,
         "name": "",
-        "label": "Real Class:",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "label": "Actual",
+        "format": "{{msg.payload.actual}}",
+        "layout": "col-center",
         "className": "",
-        "x": 870,
-        "y": 480,
+        "x": 970,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "42ea70fbbcf4243b",
-        "type": "function",
-        "z": "32374ce96bb10d12",
-        "name": "ExtractClass",
-        "func": "let dataObj = msg.payload;\nlet keys = Object.keys(dataObj)\nmsg.payload = dataObj[keys[keys.length-1]]\nmsg.topic = \"real\"\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 480,
-        "wires": [
-            [
-                "083ba69d218a0ecd",
-                "8f1072204a71175a"
-            ]
-        ]
-    },
-    {
-        "id": "ba33277a4b65acde",
+        "id": "f1c453838fd12a7d",
         "type": "ui_text",
         "z": "32374ce96bb10d12",
-        "group": "695a5728f1b1bf19",
-        "order": 3,
-        "width": 0,
-        "height": 0,
+        "group": "285a4a1d9a259f1c",
+        "order": 5,
+        "width": 2,
+        "height": 1,
         "name": "",
-        "label": "Trained:",
-        "format": "{{msg.init}}",
-        "layout": "row-spread",
+        "label": "DTAcc",
+        "format": "{{msg.payload.accuracy}}%",
+        "layout": "col-center",
         "className": "",
-        "x": 120,
-        "y": 320,
+        "x": 970,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d345892ae481d72c",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "Actual",
+        "format": "{{msg.payload.actual}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4163e7adf6a837f1",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "RFAcc",
+        "format": "{{msg.payload.accuracy}}%",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9f48323529de22ab",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "Actual",
+        "format": "{{msg.payload.actual}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "311f9a3798d9286d",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "name": "",
+        "label": "NBAcc",
+        "format": "{{msg.payload.accuracy}}%",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d94319ac3df36781",
+        "type": "debug",
+        "z": "32374ce96bb10d12",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0f54ec76956bbc09",
+        "type": "debug",
+        "z": "32374ce96bb10d12",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "556db27ea5c32866",
+        "type": "debug",
+        "z": "32374ce96bb10d12",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 300,
         "wires": []
     },
     {
@@ -2495,8 +2914,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 290,
-        "y": 240,
+        "x": 270,
+        "y": 140,
         "wires": [
             [
                 "4facead34f5e16dd"
@@ -2507,12 +2926,13 @@
         "id": "4facead34f5e16dd",
         "type": "subflow:d022eb2b56d54e12",
         "z": "c86eb73a2941d666",
-        "name": "",
-        "x": 360,
+        "name": "Inputs",
+        "x": 290,
         "y": 340,
         "wires": [
             [
-                "04c2a93bce22abea"
+                "04c2a93bce22abea",
+                "51615e2ac34087fb"
             ]
         ]
     },
@@ -2520,31 +2940,14 @@
         "id": "04c2a93bce22abea",
         "type": "subflow:a2f8739eef20117c",
         "z": "c86eb73a2941d666",
-        "name": "",
-        "x": 610,
+        "name": "EdgeNode",
+        "x": 490,
         "y": 340,
         "wires": [
             [
-                "d66079313af7b211"
+                "9edbd5eae453a693"
             ]
         ]
-    },
-    {
-        "id": "d66079313af7b211",
-        "type": "debug",
-        "z": "c86eb73a2941d666",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "ab5589ea37d8adf0",
@@ -2567,7 +2970,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 90,
-        "y": 240,
+        "y": 140,
         "wires": [
             [
                 "aebd38fbbbe91a45"
@@ -2598,40 +3001,33 @@
         "y": 340,
         "wires": [
             [
-                "4facead34f5e16dd",
-                "650e5adaafa880c2"
+                "4facead34f5e16dd"
             ]
         ]
     },
     {
-        "id": "588eab6f19bba86e",
-        "type": "ui_audio",
+        "id": "9edbd5eae453a693",
+        "type": "subflow:ea34a77b88c038b0",
         "z": "c86eb73a2941d666",
         "name": "",
-        "group": "695a5728f1b1bf19",
-        "voice": "Microsoft David - English (United States)",
-        "always": "",
-        "x": 440,
-        "y": 420,
+        "x": 690,
+        "y": 340,
         "wires": []
     },
     {
-        "id": "650e5adaafa880c2",
-        "type": "function",
+        "id": "51615e2ac34087fb",
+        "type": "debug",
         "z": "c86eb73a2941d666",
         "name": "",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 190,
-        "y": 420,
-        "wires": [
-            [
-                "588eab6f19bba86e"
-            ]
-        ]
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 460,
+        "wires": []
     }
 ]
