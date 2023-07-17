@@ -353,7 +353,7 @@
                 "y": 220,
                 "wires": [
                     {
-                        "id": "892edc1de4588edb"
+                        "id": "ef73343f65c5c77f"
                     }
                 ]
             }
@@ -419,26 +419,40 @@
         "category": "",
         "in": [
             {
-                "x": 220,
-                "y": 260,
+                "x": 20,
+                "y": 280,
                 "wires": [
                     {
-                        "id": "b4b47f19ee854893"
+                        "id": "74211aea63b5ff8b"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 960,
-                "y": 300,
+                "x": 940,
+                "y": 220,
                 "wires": [
                     {
                         "id": "3724bacfe4d54a7e",
                         "port": 0
                     },
                     {
-                        "id": "1d1152357aa8a138",
+                        "id": "6fad0560c049ae6c",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 960,
+                "y": 480,
+                "wires": [
+                    {
+                        "id": "b7c88f4bfe45f4b1",
+                        "port": 0
+                    },
+                    {
+                        "id": "dbfff2a1f094d40c",
                         "port": 0
                     }
                 ]
@@ -456,26 +470,40 @@
         "category": "",
         "in": [
             {
-                "x": 80,
-                "y": 280,
+                "x": 40,
+                "y": 300,
                 "wires": [
                     {
-                        "id": "f52fea48342cd315"
+                        "id": "1ed08c96dea9d621"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 900,
-                "y": 240,
+                "x": 660,
+                "y": 140,
                 "wires": [
                     {
-                        "id": "527bfb297e841285",
+                        "id": "90d9e3a8d0446dfc",
                         "port": 0
                     },
                     {
-                        "id": "29dec0497a83edc6",
+                        "id": "2683f77aab20990d",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 660,
+                "y": 420,
+                "wires": [
+                    {
+                        "id": "3c61982af29affa9",
+                        "port": 0
+                    },
+                    {
+                        "id": "be2e8afac42cf4ac",
                         "port": 0
                     }
                 ]
@@ -511,8 +539,16 @@
                 "y": 460,
                 "wires": [
                     {
-                        "id": "587be0b3d2b1ddcf",
+                        "id": "9b9886ea365515a2",
                         "port": 0
+                    },
+                    {
+                        "id": "9b9886ea365515a2",
+                        "port": 1
+                    },
+                    {
+                        "id": "9b9886ea365515a2",
+                        "port": 2
                     }
                 ]
             }
@@ -540,8 +576,8 @@
         ],
         "out": [
             {
-                "x": 960,
-                "y": 180,
+                "x": 940,
+                "y": 140,
                 "wires": [
                     {
                         "id": "239fd604d456a852",
@@ -573,8 +609,8 @@
         ],
         "out": [
             {
-                "x": 820,
-                "y": 160,
+                "x": 960,
+                "y": 180,
                 "wires": [
                     {
                         "id": "ace854d5c23f4448",
@@ -599,11 +635,17 @@
         "category": "",
         "in": [
             {
-                "x": 60,
-                "y": 220,
+                "x": 40,
+                "y": 240,
                 "wires": [
                     {
+                        "id": "f3c1cd97b8fb5692"
+                    },
+                    {
                         "id": "fdadfbd956995785"
+                    },
+                    {
+                        "id": "d8f08977542c48ed"
                     }
                 ]
             }
@@ -611,11 +653,15 @@
         "out": [
             {
                 "x": 640,
-                "y": 120,
+                "y": 80,
                 "wires": [
                     {
-                        "id": "a0cd6f746a5e2f92",
+                        "id": "d8f08977542c48ed",
                         "port": 0
+                    },
+                    {
+                        "id": "d8f08977542c48ed",
+                        "port": 1
                     }
                 ]
             },
@@ -624,28 +670,26 @@
                 "y": 220,
                 "wires": [
                     {
-                        "id": "f81a16e12c670b5a",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 640,
-                "y": 340,
-                "wires": [
-                    {
                         "id": "fdadfbd956995785",
                         "port": 0
+                    },
+                    {
+                        "id": "fdadfbd956995785",
+                        "port": 1
                     }
                 ]
             },
             {
                 "x": 640,
-                "y": 460,
+                "y": 360,
                 "wires": [
                     {
-                        "id": "d8f08977542c48ed",
+                        "id": "f3c1cd97b8fb5692",
                         "port": 0
+                    },
+                    {
+                        "id": "f3c1cd97b8fb5692",
+                        "port": 1
                     }
                 ]
             }
@@ -672,6 +716,57 @@
             }
         ],
         "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "04d97421e9b36a04",
+        "type": "subflow",
+        "name": "SVM",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "5a0e08176fa9da40"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 940,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "7a0756937716bc19",
+                        "port": 0
+                    },
+                    {
+                        "id": "4eb8211bff06b551",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 940,
+                "y": 400,
+                "wires": [
+                    {
+                        "id": "b1168eeeeeb1d5ce",
+                        "port": 0
+                    },
+                    {
+                        "id": "3145f57c6db0606a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
         "env": [],
         "meta": {},
         "color": "#DDAA99"
@@ -800,8 +895,8 @@
         "tab": "1a297c36cb8b6a85",
         "order": 5,
         "disp": true,
-        "width": 6,
-        "collapse": false,
+        "width": 8,
+        "collapse": true,
         "className": ""
     },
     {
@@ -817,9 +912,9 @@
         "className": ""
     },
     {
-        "id": "5ca119a6a6c0717b",
+        "id": "c5b2afceb578627a",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 4,
@@ -827,9 +922,9 @@
         "height": 1
     },
     {
-        "id": "07eced0f2e775af7",
+        "id": "8b92218a1057c6a6",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 5,
@@ -837,9 +932,9 @@
         "height": 1
     },
     {
-        "id": "35f486f96c44b6b3",
+        "id": "432a3084a2f4053c",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 6,
@@ -847,9 +942,9 @@
         "height": 1
     },
     {
-        "id": "5db57b0a46fd68a7",
+        "id": "d7a704df286b9aba",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 7,
@@ -857,9 +952,9 @@
         "height": 1
     },
     {
-        "id": "95bc5e25a12eda92",
+        "id": "fe21996e5bd9e2b8",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 8,
@@ -867,9 +962,9 @@
         "height": 1
     },
     {
-        "id": "71804f2ad837f4f5",
+        "id": "6add3ca9278ed9ef",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "9b65166c46416877",
         "order": 9,
@@ -877,33 +972,343 @@
         "height": 1
     },
     {
-        "id": "db89500b4b2468b0",
+        "id": "6c87429db718173b",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "285a4a1d9a259f1c",
-        "order": 2,
+        "order": 3,
         "width": 2,
         "height": 1
     },
     {
-        "id": "a0907781f4689779",
+        "id": "79fbaad5bda949a3",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "285a4a1d9a259f1c",
-        "order": 6,
-        "width": 6,
+        "order": 7,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "33b6899afc8bad56",
+        "id": "c1c222ed91139395",
         "type": "ui_spacer",
-        "z": "c86eb73a2941d666",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 8,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "39193349f853cf6b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
         "name": "spacer",
         "group": "285a4a1d9a259f1c",
         "order": 10,
-        "width": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "079fdd3aaea65777",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "05dc0d17ad6eac0b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f4b8ecc520fc3297",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0272a67bd2c63b9b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "eeb3e3cc04e433dd",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a67452bc66b34b67",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7b4fb48215126b32",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a323775a3d775279",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8f6be341d306c33e",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66ad508829514c54",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "08c4a6b7a4ef9590",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66081a1da3bce324",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf3e87e0513f50a0",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "43681b67c068b1c7",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec7bda70d07006be",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d5683ea0b750b074",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "9b65166c46416877",
+        "order": 9,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "22e2d3cc59e5c72b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1391ab30eee3f19f",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b63e7ac97cdce519",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 8,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "505d4fc78d9b5af4",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1764d98a592a34d4",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d3347a2d8558d19f",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6bb3a5030ecd7ee3",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ba88a2ec8c0ad653",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "257878e10a090d0e",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "09aaa10bc9a6592b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b3333885763e233f",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ac229033326c501b",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "699efb5cf5d5a8d9",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2f007b15e0cac7a5",
+        "type": "ui_spacer",
+        "z": "32374ce96bb10d12",
+        "name": "spacer",
+        "group": "285a4a1d9a259f1c",
+        "order": 28,
+        "width": 1,
         "height": 1
     },
     {
@@ -1422,25 +1827,6 @@
         ]
     },
     {
-        "id": "892edc1de4588edb",
-        "type": "file in",
-        "z": "b1942cd0e3fb69cc",
-        "name": "ReadFile",
-        "filename": "data_beautified_withtimestamp.csv",
-        "format": "lines",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": true,
-        "x": 200,
-        "y": 220,
-        "wires": [
-            [
-                "b6cc87397df25997"
-            ]
-        ]
-    },
-    {
         "id": "b6cc87397df25997",
         "type": "join",
         "z": "b1942cd0e3fb69cc",
@@ -1452,11 +1838,15 @@
         "key": "topic",
         "joiner": "\\n",
         "joinerType": "str",
-        "accumulate": "false",
+        "accumulate": true,
         "timeout": "",
         "count": "",
         "reduceRight": false,
-        "x": 650,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 490,
         "y": 220,
         "wires": [
             [
@@ -1479,8 +1869,45 @@
         "strings": true,
         "include_empty_strings": "",
         "include_null_values": "",
-        "x": 790,
+        "x": 690,
         "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef73343f65c5c77f",
+        "type": "file in",
+        "z": "b1942cd0e3fb69cc",
+        "name": "ReadFile",
+        "filename": "data_beautified2random.csv",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "b6cc87397df25997"
+            ]
+        ]
+    },
+    {
+        "id": "3b5a6523f684bbd2",
+        "type": "file in",
+        "z": "b1942cd0e3fb69cc",
+        "d": true,
+        "name": "ReadFile",
+        "filename": "Test_Data_CSV3.csv",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 460,
+        "y": 80,
         "wires": [
             []
         ]
@@ -1622,8 +2049,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 330,
-        "y": 260,
+        "x": 250,
+        "y": 140,
         "wires": [
             [
                 "3724bacfe4d54a7e"
@@ -1653,10 +2080,12 @@
                 "module": "ml-cart"
             }
         ],
-        "x": 550,
-        "y": 120,
+        "x": 510,
+        "y": 20,
         "wires": [
-            []
+            [
+                "6f21d792c1e821d6"
+            ]
         ]
     },
     {
@@ -1679,8 +2108,8 @@
                 "module": "ml-matrix"
             }
         ],
-        "x": 320,
-        "y": 460,
+        "x": 340,
+        "y": 260,
         "wires": [
             [
                 "6fad0560c049ae6c"
@@ -1698,18 +2127,168 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 460,
+        "x": 540,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74211aea63b5ff8b",
+        "type": "switch",
+        "z": "9566982d40e572b6",
+        "name": "",
+        "property": "isclassification",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 110,
+        "y": 380,
         "wires": [
             [
-                "1d1152357aa8a138"
+                "b4b47f19ee854893"
+            ],
+            [
+                "da72f93c3b90a17e"
             ]
         ]
     },
     {
-        "id": "1d1152357aa8a138",
+        "id": "da72f93c3b90a17e",
+        "type": "switch",
+        "z": "9566982d40e572b6",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "b7c88f4bfe45f4b1"
+            ],
+            [
+                "164387bc87f233d2"
+            ]
+        ]
+    },
+    {
+        "id": "164387bc87f233d2",
         "type": "function",
         "z": "9566982d40e572b6",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst regression = flow.get(\"dTRegressionModel\");\nlet result = \"\"\ntry{\n   let resultData = regression.predict(Xtest);\n   result = parseInt(resultData[0])\n}catch(e){\n    \n}\n\n\nmsg.payload = {\n    algorithm: \"DecisionTree\",\n    result,\n    actual,\n    testData,\n    features\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "dbfff2a1f094d40c"
+            ]
+        ]
+    },
+    {
+        "id": "dbfff2a1f094d40c",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "calculateStats",
+        "func": "const { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet pastData = context.get(\"pastData\");\n\npastData.push({actual: actual, result: result})\ntotalTests++;\n\nlet mse = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    mse += Math.pow((dataRow.actual - dataRow.result),2)/totalTests\n}\n\nlet absoluteErrorTotal = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    absoluteErrorTotal += Math.abs(dataRow.actual - dataRow.result)\n}\nconst mae = Math.round(((absoluteErrorTotal/totalTests) + Number.EPSILON) * 1000) / 1000\nconst rmse = Math.round(( Math.sqrt(mse) + Number.EPSILON) * 1000) / 1000\ncontext.set(\"pastData\", pastData);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    pastData,\n    classStats:{\n       rmse,\n       mae \n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"pastData\", []);",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b27f15d52c6f6f2",
+        "type": "comment",
+        "z": "9566982d40e572b6",
+        "name": "Regression Flow",
+        "info": "",
+        "x": 420,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "27f8d4711c2e3887",
+        "type": "comment",
+        "z": "9566982d40e572b6",
+        "name": "Classification Flow",
+        "info": "",
+        "x": 297.1999816894531,
+        "y": 41.19999694824219,
+        "wires": []
+    },
+    {
+        "id": "b7c88f4bfe45f4b1",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\nconst { DecisionTreeRegression } = mlCart;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\nconst regression = new DecisionTreeRegression();\nregression.train(X, Y);\n\nflow.set(\"dTRegressionModel\", regression)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            },
+            {
+                "var": "mlCart",
+                "module": "ml-cart"
+            }
+        ],
+        "x": 690,
+        "y": 380,
+        "wires": [
+            [
+                "d51d032fb27f2483"
+            ]
+        ]
+    },
+    {
+        "id": "40d404278569a6e7",
+        "type": "function",
+        "z": "9566982d40e572b6",
+        "d": true,
         "name": "addTimeData",
         "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
         "outputs": 1,
@@ -1717,11 +2296,43 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 420,
+        "x": 480,
+        "y": 160,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6f21d792c1e821d6",
+        "type": "debug",
+        "z": "9566982d40e572b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d51d032fb27f2483",
+        "type": "debug",
+        "z": "9566982d40e572b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "f52fea48342cd315",
@@ -1741,11 +2352,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 230,
-        "y": 280,
+        "x": 150,
+        "y": 460,
         "wires": [
             [
-                "29dec0497a83edc6"
+                "3c61982af29affa9"
             ],
             [
                 "d5b4c830e42d2a81"
@@ -1757,7 +2368,7 @@
         "type": "function",
         "z": "b4fdd94459dced40",
         "name": "runModel",
-        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"rfModel\");\nlet result = \"\"\ntry{\n   let resultData = classifier.predict(Xtest); \n   result = parseInt(resultData[0])\n}catch(e){\n    \n}\n\n\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result,\n    actual,\n    testData,\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix(\n[features]\n);\n//const Ytest = Matrix.columnVector([1]);\nconst regression = flow.get(\"rfRegressionModel\");\nlet result = \"\"\ntry{\n   let resultData = regression.predict(Xtest);\n   result = parseInt(resultData[0])\n}catch(e){\n    \n}\n\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result,\n    actual,\n    testData,\n    features\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1772,8 +2383,8 @@
                 "module": "ml-matrix"
             }
         ],
-        "x": 400,
-        "y": 380,
+        "x": 300,
+        "y": 500,
         "wires": [
             [
                 "be2e8afac42cf4ac"
@@ -1781,47 +2392,28 @@
         ]
     },
     {
-        "id": "527bfb297e841285",
+        "id": "be2e8afac42cf4ac",
         "type": "function",
         "z": "b4fdd94459dced40",
-        "name": "addTimeData",
-        "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
+        "name": "calculateStats",
+        "func": "const { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet pastData = context.get(\"pastData\");\n\npastData.push({actual: actual, result: result})\ntotalTests++;\n\nlet mse = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    mse += Math.pow((dataRow.actual - dataRow.result),2)/totalTests\n}\n\nlet absoluteErrorTotal = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    absoluteErrorTotal += Math.abs(dataRow.actual - dataRow.result)\n}\nconst mae = Math.round(((absoluteErrorTotal/totalTests) + Number.EPSILON) * 1000) / 1000\nconst rmse = Math.round(( Math.sqrt(mse) + Number.EPSILON) * 1000) / 1000\ncontext.set(\"pastData\", pastData);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    pastData,\n    classStats:{\n       rmse,\n       mae \n    }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"pastData\", []);",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 380,
+        "x": 480,
+        "y": 500,
         "wires": [
             []
         ]
     },
     {
-        "id": "be2e8afac42cf4ac",
-        "type": "function",
-        "z": "b4fdd94459dced40",
-        "name": "calculateStats",
-        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 380,
-        "wires": [
-            [
-                "527bfb297e841285"
-            ]
-        ]
-    },
-    {
-        "id": "29dec0497a83edc6",
+        "id": "3c61982af29affa9",
         "type": "function",
         "z": "b4fdd94459dced40",
         "name": "train",
-        "func": "\nconst { Matrix } = MLMatrix;\nconst { RandomForestClassifier } = mlRandomForest;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n// Our training set (X,Y).\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\n\n\nconst options = {\n  seed: 3,\n  maxFeatures: 0.8,\n  replacement: true,\n  nEstimators: 25\n};\n\nconst classifier = new RandomForestClassifier(options);\nclassifier.train(X, Y);\n\nflow.set(\"rfModel\", classifier)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "func": "const { Matrix } = MLMatrix;\nconst { RandomForestRegression } = mlRandomForest;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target =\"\";\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1){\n             target = data\n             break\n        }\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n// Our training set (X,Y).\n\nconst options = {\n  seed: 3,\n  maxFeatures: 2,\n  replacement: false,\n  nEstimators: 200\n};\nconst regression = new RandomForestRegression();\nregression.train(featuresDataArray, targetDataArray);\nflow.set(\"rfRegressionModel\", regression)\n\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
@@ -1837,10 +2429,159 @@
             }
         ],
         "x": 470,
-        "y": 100,
+        "y": 380,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "90d9e3a8d0446dfc",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "train",
+        "func": "\nconst { Matrix } = MLMatrix;\nconst { RandomForestClassifier } = mlRandomForest;\n\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\nconst X = new Matrix(featuresDataArray);\nconst Y = targetDataArray;\n\nconst options = {\n  seed: 3,\n  maxFeatures: 0.8,\n  replacement: true,\n  nEstimators: 25\n};\n\nconst classifier = new RandomForestClassifier(options);\nclassifier.train(X, Y);\n\nflow.set(\"rfClassificationModel\", classifier)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            },
+            {
+                "var": "mlRandomForest",
+                "module": "ml-random-forest"
+            }
+        ],
+        "x": 390,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa4857215b3b5a53",
+        "type": "switch",
+        "z": "b4fdd94459dced40",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "90d9e3a8d0446dfc"
+            ],
+            [
+                "2d2d761b71c13a42"
+            ]
+        ]
+    },
+    {
+        "id": "2683f77aab20990d",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "calculateStats",
+        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d2d761b71c13a42",
+        "type": "function",
+        "z": "b4fdd94459dced40",
+        "name": "runModel",
+        "func": "\nconst { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\n\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\nconst Xtest = new Matrix([features]);\n\nconst classifier = flow.get(\"rfClassificationModel\");\nlet result = \"\"\ntry{\n   let resultData = classifier.predict(Xtest); \n   result = parseInt(resultData[0])\n}catch(e){}\n\nmsg.payload = {\n    algorithm: \"RandomForest\",\n    result,\n    testData,\n    actual\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "2683f77aab20990d"
+            ]
+        ]
+    },
+    {
+        "id": "1ed08c96dea9d621",
+        "type": "switch",
+        "z": "b4fdd94459dced40",
+        "name": "",
+        "property": "isclassification",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "aa4857215b3b5a53"
+            ],
+            [
+                "f52fea48342cd315"
+            ]
+        ]
+    },
+    {
+        "id": "f190b311c94bad4a",
+        "type": "comment",
+        "z": "b4fdd94459dced40",
+        "name": "Classification Flow",
+        "info": "",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d057cde69391d180",
+        "type": "comment",
+        "z": "b4fdd94459dced40",
+        "name": "Regression Flow",
+        "info": "",
+        "x": 300,
+        "y": 360,
+        "wires": []
     },
     {
         "id": "9b9886ea365515a2",
@@ -1848,36 +2589,14 @@
         "z": "a2f8739eef20117c",
         "name": "",
         "x": 580,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
-                "587be0b3d2b1ddcf"
+                "9d3695f45eed3411"
             ],
             [
-                "587be0b3d2b1ddcf"
+                "9d3695f45eed3411"
             ],
-            [
-                "587be0b3d2b1ddcf"
-            ],
-            [
-                "587be0b3d2b1ddcf"
-            ]
-        ]
-    },
-    {
-        "id": "587be0b3d2b1ddcf",
-        "type": "function",
-        "z": "a2f8739eef20117c",
-        "name": "",
-        "func": "if(!msg.payload.result)\n    return msg\nconst result = msg.payload.result;\nvar result_class = \"\"\nswitch(result){\n    case 1: \n        result_class = \"bad\";\n        break;\n    case 2: \n        result_class = \"acceptable\";\n        break;\n    case 3: \n        result_class = \"ideal\";\n        break;\n    case 4: \n        result_class = \"inefficient\";\n        break;\n}\nmsg.payload={\n    ...msg.payload,\n    result_class\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 820,
-        "y": 460,
-        "wires": [
             [
                 "9d3695f45eed3411"
             ]
@@ -1927,14 +2646,14 @@
         "type": "function",
         "z": "a66c82f3cadc8b79",
         "name": "splitMLData",
-        "func": "//let arrayData = msg.payload;\nif(!Array.isArray(msg.payload))\n    return [msg, msg];\nlet arrayData = msg.payload; //[1, 2, 3, 4, 5, 6, 7, 8];\nlet cutOffPoint = Math.floor(arrayData.length*0.6)\nlet firstArray = arrayData.slice(0, cutOffPoint);\nlet secondArray = arrayData.slice(cutOffPoint);\nlet msg1={}, msg2={};\nmsg1.payload = firstArray;\nmsg2.payload = secondArray;\nreturn [msg1, msg2];",
+        "func": "//let arrayData = msg.payload;\nif(!Array.isArray(msg.payload))\n    return [msg, msg];\nlet arrayData = msg.payload; //[1, 2, 3, 4, 5, 6, 7, 8];\nlet cutOffPoint = Math.floor(arrayData.length*0.8)\nlet firstArray = arrayData.slice(0, cutOffPoint);\nlet secondArray = arrayData.slice(cutOffPoint);\nlet msg1={...msg}, msg2={};\nmsg1.payload = firstArray;\nmsg2.payload = secondArray;\nreturn [msg1, msg2];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 180,
+        "y": 220,
         "wires": [
             [
                 "239fd604d456a852"
@@ -1963,8 +2682,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 180,
+        "x": 750,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1980,7 +2699,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 800,
         "y": 280,
         "wires": []
     },
@@ -1989,14 +2708,14 @@
         "type": "function",
         "z": "a66c82f3cadc8b79",
         "name": "preprocessData",
-        "func": "if(!Array.isArray(msg.payload))\n    return msg;\nlet arrayData = msg.payload; \n\nfor(let i=0; i<arrayData.length;i++){\n    let row = arrayData[i]\n    let keys = Object.keys(row)\n    /*for(let j=0; j<1;j++){\n        delete row[keys[j]]\n    }*/\n    row[keys[0]] = Date.parse(row[keys[0]])\n    delete row[keys[keys.length-1]]\n}\nmsg.payload = arrayData\nreturn msg;",
+        "func": "if(!Array.isArray(msg.payload))\n    return msg;\nlet arrayData = msg.payload; \n\nfor(let i=0; i<arrayData.length;i++){\n    let row = arrayData[i]\n    let keys = Object.keys(row)\n    /*for(let j=0; j<1;j++){\n        delete row[keys[j]]\n    }*/\n    //row[keys[1]] = Date.parse(row[keys[1]])\n    //delete row[keys[0]]\n    //delete row[keys[keys.length-1]]\n}\nmsg.payload = arrayData\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 360,
+        "x": 560,
+        "y": 460,
         "wires": [
             [
                 "6e7b57368ad58d0e"
@@ -2008,18 +2727,16 @@
         "type": "function",
         "z": "d022eb2b56d54e12",
         "name": "RunTests",
-        "func": "const testData = global.get(\"testData\")\nlet index = flow.get(\"indexData\")\nif(index == testData.length)\n    index=0;\n\nlet dataObj = testData[index]\nvar newDataObj = {};\nfor(var property in dataObj) {\n      newDataObj[property] = dataObj[property];\n}\n//let keys = Object.keys(newDataObj)\n//delete newDataObj[keys[keys.length-1]]\n\nindex++;\nflow.set(\"indexData\", index)\n\nmsg.payload = newDataObj;\nmsg.data_id = index -1;\nreturn msg;",
+        "func": "const testData = global.get(\"testData\")\nlet index = flow.get(\"indexData\")\n//testData.length\nif(index == testData.length)\n    return\n    //index=0;\n\nlet dataObj = testData[index]\nvar newDataObj = {};\nfor(var property in dataObj) {\n      newDataObj[property] = dataObj[property];\n}\n//let keys = Object.keys(newDataObj)\n//delete newDataObj[keys[keys.length-1]]\n\nindex++;\nflow.set(\"indexData\", index)\n\nmsg.payload = newDataObj;\nmsg.data_id = index -1;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"indexData\",0)",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 460,
+        "x": 440,
+        "y": 540,
         "wires": [
-            [
-                "9591ec4dfefcc018"
-            ]
+            []
         ]
     },
     {
@@ -2027,7 +2744,7 @@
         "type": "subflow:a66c82f3cadc8b79",
         "z": "d022eb2b56d54e12",
         "name": "",
-        "x": 470,
+        "x": 490,
         "y": 160,
         "wires": [
             []
@@ -2063,23 +2780,6 @@
         ]
     },
     {
-        "id": "9591ec4dfefcc018",
-        "type": "function",
-        "z": "d022eb2b56d54e12",
-        "name": "",
-        "func": "const testData = global.get(\"testData\")\nmsg.payload = testData\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8f3664ab827ee4fe",
         "type": "delay",
         "z": "d022eb2b56d54e12",
@@ -2088,7 +2788,7 @@
         "timeout": "10",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "2",
+        "nbRateUnits": "0.4",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
@@ -2096,8 +2796,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 180,
-        "y": 460,
+        "x": 170,
+        "y": 540,
         "wires": [
             [
                 "93ef18d411c368af"
@@ -2124,35 +2824,14 @@
         ]
     },
     {
-        "id": "a0cd6f746a5e2f92",
-        "type": "subflow:3eea6da9acd67980",
-        "z": "0d48d6ca863e9e31",
-        "name": "LogisticRegressionModel",
-        "x": 350,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f81a16e12c670b5a",
-        "type": "subflow:65bb01d7a33d3a8f",
-        "z": "0d48d6ca863e9e31",
-        "name": "",
-        "x": 310,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fdadfbd956995785",
         "type": "subflow:b4fdd94459dced40",
         "z": "0d48d6ca863e9e31",
         "name": "",
-        "x": 320,
-        "y": 340,
+        "x": 360,
+        "y": 220,
         "wires": [
+            [],
             []
         ]
     },
@@ -2161,9 +2840,22 @@
         "type": "subflow:9566982d40e572b6",
         "z": "0d48d6ca863e9e31",
         "name": "",
-        "x": 310,
-        "y": 460,
+        "x": 370,
+        "y": 60,
         "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f3c1cd97b8fb5692",
+        "type": "subflow:04d97421e9b36a04",
+        "z": "0d48d6ca863e9e31",
+        "name": "",
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [],
             []
         ]
     },
@@ -2217,33 +2909,24 @@
             },
             {
                 "t": "eq",
-                "v": "LogisticRegression",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "NaiveBayes",
+                "v": "SVM",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 3,
         "x": 430,
         "y": 220,
         "wires": [
             [
-                "98b610e4fd603319",
-                "0f54ec76956bbc09"
+                "98b610e4fd603319"
             ],
             [
-                "445c2e294353241a",
-                "d94319ac3df36781"
+                "445c2e294353241a"
             ],
-            [],
             [
-                "e6641fe8dad661ba",
-                "556db27ea5c32866"
+                "e6641fe8dad661ba"
             ]
         ]
     },
@@ -2252,7 +2935,7 @@
         "type": "function",
         "z": "32374ce96bb10d12",
         "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"DT\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"DT\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy,\n    stats: msg.payload.classStats\n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2264,7 +2947,8 @@
             [
                 "547498a8476738ba",
                 "97fdfb8824926d09",
-                "f1c453838fd12a7d"
+                "f1c453838fd12a7d",
+                "18662a263eb82356"
             ]
         ]
     },
@@ -2273,7 +2957,7 @@
         "type": "function",
         "z": "32374ce96bb10d12",
         "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"RF\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"RF\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy,\n    stats: msg.payload.classStats\n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2285,7 +2969,8 @@
             [
                 "fb9dbe81e80cba9a",
                 "d345892ae481d72c",
-                "4163e7adf6a837f1"
+                "4163e7adf6a837f1",
+                "dc4afb79ee99264c"
             ]
         ]
     },
@@ -2315,7 +3000,8 @@
                 "42ea70fbbcf4243b",
                 "060fc4c9f40a42e7",
                 "2d40e5a47cd04453",
-                "b48d51c11331957b"
+                "b48d51c11331957b",
+                "3a9e77f18963f8cc"
             ],
             []
         ]
@@ -2344,7 +3030,7 @@
         "type": "function",
         "z": "32374ce96bb10d12",
         "name": "SetTopic",
-        "func": "if(msg.init)\n    return msg\nmsg.topic = \"NB\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy\n}\nreturn msg",
+        "func": "if(msg.init)\n    return msg\nmsg.topic = \"SVM\"\nmsg.payload = {\n    result: msg.payload.result,\n    actual: msg.payload.actual,\n    accuracy: msg.payload.accuracy,\n    stats: msg.payload.classStats\n}\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2356,7 +3042,8 @@
             [
                 "44a83984b027a77d",
                 "9f48323529de22ab",
-                "311f9a3798d9286d"
+                "311f9a3798d9286d",
+                "bc3a0b046cc066bd"
             ]
         ]
     },
@@ -2366,7 +3053,7 @@
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
         "order": 1,
-        "width": 4,
+        "width": 3,
         "height": 1,
         "name": "",
         "label": "Real:",
@@ -2607,7 +3294,7 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 3,
+        "order": 5,
         "width": 2,
         "height": 1,
         "name": "",
@@ -2624,7 +3311,7 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 7,
+        "order": 14,
         "width": 2,
         "height": 1,
         "name": "",
@@ -2633,7 +3320,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1130,
-        "y": 180,
+        "y": 200,
         "wires": []
     },
     {
@@ -2641,16 +3328,16 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 11,
+        "order": 22,
         "width": 2,
         "height": 1,
         "name": "",
-        "label": "NB",
+        "label": "SVM",
         "format": "{{msg.payload.result}}",
         "layout": "col-center",
         "className": "",
-        "x": 1130,
-        "y": 320,
+        "x": 1090,
+        "y": 360,
         "wires": []
     },
     {
@@ -2750,11 +3437,11 @@
         "width": 2,
         "height": 1,
         "name": "",
-        "label": "Actual",
+        "label": "DTActual",
         "format": "{{msg.payload.actual}}",
         "layout": "col-center",
         "className": "",
-        "x": 970,
+        "x": 940,
         "y": 80,
         "wires": []
     },
@@ -2763,8 +3450,8 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 5,
-        "width": 2,
+        "order": 6,
+        "width": 3,
         "height": 1,
         "name": "",
         "label": "DTAcc",
@@ -2772,7 +3459,7 @@
         "layout": "col-center",
         "className": "",
         "x": 970,
-        "y": 140,
+        "y": 120,
         "wires": []
     },
     {
@@ -2780,16 +3467,16 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 8,
+        "order": 13,
         "width": 2,
         "height": 1,
         "name": "",
-        "label": "Actual",
+        "label": "RFActual",
         "format": "{{msg.payload.actual}}",
         "layout": "col-center",
         "className": "",
-        "x": 1130,
-        "y": 220,
+        "x": 1140,
+        "y": 240,
         "wires": []
     },
     {
@@ -2797,7 +3484,7 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 9,
+        "order": 15,
         "width": 2,
         "height": 1,
         "name": "",
@@ -2806,7 +3493,7 @@
         "layout": "col-center",
         "className": "",
         "x": 1130,
-        "y": 260,
+        "y": 280,
         "wires": []
     },
     {
@@ -2814,16 +3501,16 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 12,
-        "width": 2,
+        "order": 21,
+        "width": 8,
         "height": 1,
         "name": "",
-        "label": "Actual",
+        "label": "SVMActual",
         "format": "{{msg.payload.actual}}",
         "layout": "col-center",
         "className": "",
         "x": 1130,
-        "y": 360,
+        "y": 420,
         "wires": []
     },
     {
@@ -2831,58 +3518,375 @@
         "type": "ui_text",
         "z": "32374ce96bb10d12",
         "group": "285a4a1d9a259f1c",
-        "order": 13,
+        "order": 23,
         "width": 2,
         "height": 1,
         "name": "",
-        "label": "NBAcc",
+        "label": "SVMAcc",
         "format": "{{msg.payload.accuracy}}%",
         "layout": "col-center",
         "className": "",
-        "x": 1130,
-        "y": 400,
+        "x": 1120,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "d94319ac3df36781",
-        "type": "debug",
+        "id": "3a9e77f18963f8cc",
+        "type": "function",
         "z": "32374ce96bb10d12",
-        "d": true,
+        "name": "AppendDataID",
+        "func": "msg.payload = msg.data_id\nmsg.topic = \"data_id\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 640,
+        "wires": [
+            [
+                "21b139ee3ebc0f5d"
+            ]
+        ]
+    },
+    {
+        "id": "21b139ee3ebc0f5d",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "group": "285a4a1d9a259f1c",
+        "order": 2,
+        "width": 3,
+        "height": 1,
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1210,
-        "y": 140,
+        "label": "DataId:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 860,
+        "y": 640,
         "wires": []
     },
     {
-        "id": "0f54ec76956bbc09",
-        "type": "debug",
+        "id": "18662a263eb82356",
+        "type": "ui_text",
         "z": "32374ce96bb10d12",
         "d": true,
+        "group": "285a4a1d9a259f1c",
+        "order": 9,
+        "width": 7,
+        "height": 3,
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
+        "label": "StatsDT",
+        "format": "{{msg.payload.stats}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dc4afb79ee99264c",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "d": true,
+        "group": "285a4a1d9a259f1c",
+        "order": 17,
+        "width": 7,
+        "height": 3,
+        "name": "",
+        "label": "StatsRF",
+        "format": "{{msg.payload.stats}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1180,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bc3a0b046cc066bd",
+        "type": "ui_text",
+        "z": "32374ce96bb10d12",
+        "d": true,
+        "group": "285a4a1d9a259f1c",
+        "order": 25,
+        "width": 7,
+        "height": 3,
+        "name": "",
+        "label": "StatsSVM",
+        "format": "{{msg.payload.stats}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1140,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3e70225fb0d5d066",
+        "type": "switch",
+        "z": "04d97421e9b36a04",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "b1168eeeeeb1d5ce"
+            ],
+            [
+                "b8daba2f5fb2a78c"
+            ]
+        ]
+    },
+    {
+        "id": "b8daba2f5fb2a78c",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n\n//const Ytest = Matrix.columnVector([1]);\nconst regression = flow.get(\"svmRegressionModel\");\nlet result = \"\"\nlet resultData\nlet confidence = flow.get(\"confidence\")\ntry{\n   resultData = regression.predictOneInterval(features,confidence);\n   result = resultData.predicted\n}catch(e){\n    \n}\n\n\nmsg.payload = {\n    algorithm: \"SVM\",\n    result,\n    resultData,\n    actual,\n    testData,\n    features\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "3145f57c6db0606a"
+            ]
+        ]
+    },
+    {
+        "id": "3145f57c6db0606a",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "calculateStats",
+        "func": "const { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet pastData = context.get(\"pastData\");\n\npastData.push({actual: actual, result: result})\ntotalTests++;\n\nlet mse = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    mse += Math.pow((dataRow.actual - dataRow.result),2)/totalTests\n}\n\nlet absoluteErrorTotal = 0\nfor(let i in pastData){\n    const dataRow = pastData[i]\n    absoluteErrorTotal += Math.abs(dataRow.actual - dataRow.result)\n}\nconst mae = Math.round(((absoluteErrorTotal/totalTests) + Number.EPSILON) * 1000) / 1000\nconst rmse = Math.round(( Math.sqrt(mse) + Number.EPSILON) * 1000) / 1000\ncontext.set(\"pastData\", pastData);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    pastData,\n    classStats:{\n       rmse,\n       mae \n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"pastData\", []);",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1168eeeeeb1d5ce",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "train",
+        "func": "\nconst trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target =\"\";\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1){\n             target = data\n             break\n        }\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\n const svm = new SVM({\n      kernel: SVM.KERNEL_TYPES.RBF, // The type of kernel I want to use\n     type: SVM.SVM_TYPES.EPSILON_SVR,    // The type of SVM I want to run\n     gamma: 0.00000001,\n     cost:100000,\n     epsilon: 0.00001,\n     probabilityEstimates: true\n});\n\n\nsvm.train(featuresDataArray, targetDataArray);  // train the model\nflow.set(\"svmRegressionModel\", svm)\nflow.set(\"confidence\", 0.8)\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "SVM",
+                "module": "libsvm-js/asm"
+            }
+        ],
+        "x": 610,
+        "y": 380,
+        "wires": [
+            [
+                "0aaee177f23ddf8d"
+            ]
+        ]
+    },
+    {
+        "id": "4eb8211bff06b551",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "train",
+        "func": "const trainingData = msg.payload;\nlet featuresDataArray = [];\nlet targetDataArray = [];\n\nfor(let i=0; i<trainingData.length;i++){\n    let row = trainingData[i];\n    let rowArray = Object.values(row)\n    let features = []\n    let target;\n    for(let j=0; j<rowArray.length;j++){\n        let data = rowArray[j] \n        if(j==rowArray.length-1)\n            target = data\n        else features.push(data)\n    }\n    \n    featuresDataArray.push(features)\n    targetDataArray.push(target)\n}\n\nconst svm = new SVM({\n        kernel: SVM.KERNEL_TYPES.RBF, // The type of kernel I want to use\n        type: SVM.SVM_TYPES.C_SVC,    // The type of SVM I want to run\n        gamma: 0.00001,                     // RBF kernel gamma parameter\n        cost: 10000                       // C_SVC cost parameter\n});\n\n\nsvm.train(featuresDataArray, targetDataArray);  // train the model\n\nflow.set(\"svmClassificationModel\", svm)\n\nmsg.payload ={\n    featuresDataArray,\n    targetDataArray\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//import SimpleLinearRegression from 'ml-regression-simple-linear';\n\n",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "SVM",
+                "module": "libsvm-js/asm"
+            }
+        ],
+        "x": 610,
+        "y": 40,
+        "wires": [
+            [
+                "f641d97f5cc92215"
+            ]
+        ]
+    },
+    {
+        "id": "ededb599957bba34",
+        "type": "switch",
+        "z": "04d97421e9b36a04",
+        "name": "",
+        "property": "init",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 100,
+        "wires": [
+            [
+                "4eb8211bff06b551"
+            ],
+            [
+                "43aac3f0394f58b0"
+            ]
+        ]
+    },
+    {
+        "id": "d03cb4066cda4e3e",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "d": true,
+        "name": "addTimeData",
+        "func": "const {testData, result} = msg.payload;\n//time passed get from testData\n//count of each class\nconst count = context.get(result+\"Count\")\ncontext.set(result+\"Count\", count + 1)\n\nlet currentTime = 0\nfor (var prop in testData) {\n    currentTime = testData[prop]\n    break;\n}\nlet startTime = context.get(\"startTime\")\nif(!startTime){\n   startTime = currentTime \n   context.set(\"startTime\", startTime)\n}\n    \nconst timeDiffInMins = Math.round((currentTime-startTime)/60000)\nmsg.payload = {\n   ...msg.payload,\n   timeData:{\n         timeDiffInMins,\n   timeNow: new Date(currentTime),\n   count:{\n    class1:context.get(\"1Count\"),\n    class2:context.get(\"2Count\"),\n    class3:context.get(\"3Count\"),\n    class4:context.get(\"4Count\")\n   }\n   }\n \n  \n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"1Count\",0)\ncontext.set(\"2Count\",0)\ncontext.set(\"3Count\",0)\ncontext.set(\"4Count\",0)",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a0756937716bc19",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "calculateStats",
+        "func": "\nconst { result, actual} = msg.payload\nlet totalTests = context.get(\"totalTests\");\nlet correctPredictions = context.get(\"correctPredictions\");\n\ntotalTests++;\nif(actual === result){\n     correctPredictions++;\n     let stat = context.get(result+\"Stats\")\n     stat.tp = stat.tp + 1\n     stat.precision = stat.tp/(stat.tp + stat.fp)\n     stat.recall = stat.tp/(stat.tp + stat.fn)\n     stat.fscore = 2*((stat.precision*stat.recall)/(stat.precision + stat.recall))\n     stat.precision = Math.round((stat.precision + Number.EPSILON) * 1000) / 1000\n     stat.recall = Math.round((stat.recall + Number.EPSILON) * 1000) / 1000\n     stat.fscore = Math.round((stat.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(result+\"Stats\", stat)\n}\nelse{\n     let stat1 = context.get(actual+\"Stats\")\n     stat1.fn = stat1.fn + 1\n     let stat2 = context.get(result+\"Stats\")\n     stat2.fp = stat2.fp + 1\n     stat1.precision = stat1.tp/(stat1.tp + stat1.fp)\n     stat1.recall = stat1.tp/(stat1.tp + stat1.fn)\n     stat2.precision = stat2.tp/(stat2.tp + stat2.fp)\n     stat2.recall = stat2.tp/(stat2.tp + stat2.fn)\n     stat1.fscore = 2*((stat1.precision*stat1.recall)/(stat1.precision + stat1.recall))\n     stat2.fscore = 2*((stat2.precision*stat2.recall)/(stat2.precision + stat2.recall))\n     stat1.precision = Math.round((stat1.precision + Number.EPSILON) * 1000) / 1000\n     stat1.recall = Math.round((stat1.recall + Number.EPSILON) * 1000) / 1000\n     stat1.fscore = Math.round((stat1.fscore + Number.EPSILON) * 1000) / 1000\n     stat2.precision = Math.round((stat2.precision + Number.EPSILON) * 1000) / 1000\n     stat2.recall = Math.round((stat2.recall + Number.EPSILON) * 1000) / 1000\n     stat2.fscore = Math.round((stat2.fscore + Number.EPSILON) * 1000) / 1000\n     context.set(actual+\"Stats\", stat1)\n     context.set(result+\"Stats\", stat2)\n}\n\nconst acc = (correctPredictions/totalTests)*100\nconst accuracy = Math.round((acc + Number.EPSILON) * 1000) / 1000\n\ncontext.set(\"correctPredictions\", correctPredictions);\ncontext.set(\"totalTests\", totalTests);\nmsg.payload ={\n    ...msg.payload,\n    accuracy,\n    classStats:{\n    class1: context.get(\"1Stats\"),\n    class2: context.get(\"2Stats\"),\n    class3: context.get(\"3Stats\"),\n    class4: context.get(\"4Stats\")\n    }\n\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set(\"totalTests\", 0);\ncontext.set(\"correctPredictions\", 0);\ncontext.set(\"1Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"2Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"3Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})\ncontext.set(\"4Stats\", {tp: 0, fp:0, fn:0, precision:0, recall:0})",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43aac3f0394f58b0",
+        "type": "function",
+        "z": "04d97421e9b36a04",
+        "name": "runModel",
+        "func": "const { Matrix } = MLMatrix;\nconst testData = msg.payload;\nlet featuresDataArray = [];\nlet rowArray = Object.values(testData);\nconst actual = rowArray.pop()\nlet features = [];\nfor(let j=0; j<rowArray.length;j++){\n    features.push(rowArray[j])\n}\n//const Ytest = Matrix.columnVector([1]);\nconst classifier = flow.get(\"svmClassificationModel\");\nlet result = 0\ntry{\n   result = classifier.predictOne(features); \n}catch(e){\n    \n}\n\nmsg.payload = {\n    algorithm: \"SVM\",\n    actual,\n    testData,\n    result\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "LogisticRegression",
+                "module": "ml-logistic-regression"
+            },
+            {
+                "var": "MLMatrix",
+                "module": "ml-matrix"
+            }
+        ],
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "7a0756937716bc19"
+            ]
+        ]
+    },
+    {
+        "id": "5a0e08176fa9da40",
+        "type": "switch",
+        "z": "04d97421e9b36a04",
+        "name": "",
+        "property": "isclassification",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "ededb599957bba34"
+            ],
+            [
+                "3e70225fb0d5d066"
+            ]
+        ]
+    },
+    {
+        "id": "4501e9f2b136b68e",
+        "type": "comment",
+        "z": "04d97421e9b36a04",
+        "name": "Classification Flow",
+        "info": "",
+        "x": 390,
         "y": 40,
         "wires": []
     },
     {
-        "id": "556db27ea5c32866",
+        "id": "80683bab7b8ddb88",
+        "type": "comment",
+        "z": "04d97421e9b36a04",
+        "name": "Regression Flow",
+        "info": "",
+        "x": 420,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f641d97f5cc92215",
         "type": "debug",
-        "z": "32374ce96bb10d12",
+        "z": "04d97421e9b36a04",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2891,8 +3895,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
-        "y": 300,
+        "x": 850,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0aaee177f23ddf8d",
+        "type": "debug",
+        "z": "04d97421e9b36a04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 320,
         "wires": []
     },
     {
@@ -2918,7 +3938,7 @@
         "y": 140,
         "wires": [
             [
-                "4facead34f5e16dd"
+                "0ec086cf4a457fca"
             ]
         ]
     },
@@ -2931,8 +3951,7 @@
         "y": 340,
         "wires": [
             [
-                "04c2a93bce22abea",
-                "51615e2ac34087fb"
+                "04c2a93bce22abea"
             ]
         ]
     },
@@ -2941,7 +3960,7 @@
         "type": "subflow:a2f8739eef20117c",
         "z": "c86eb73a2941d666",
         "name": "EdgeNode",
-        "x": 490,
+        "x": 570,
         "y": 340,
         "wires": [
             [
@@ -3001,7 +4020,7 @@
         "y": 340,
         "wires": [
             [
-                "4facead34f5e16dd"
+                "25e105eaaa482be6"
             ]
         ]
     },
@@ -3010,24 +4029,62 @@
         "type": "subflow:ea34a77b88c038b0",
         "z": "c86eb73a2941d666",
         "name": "",
-        "x": 690,
+        "x": 830,
         "y": 340,
         "wires": []
     },
     {
-        "id": "51615e2ac34087fb",
-        "type": "debug",
+        "id": "0ec086cf4a457fca",
+        "type": "change",
         "z": "c86eb73a2941d666",
         "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 460,
-        "wires": []
+        "rules": [
+            {
+                "t": "set",
+                "p": "isclassification",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "4facead34f5e16dd"
+            ]
+        ]
+    },
+    {
+        "id": "25e105eaaa482be6",
+        "type": "change",
+        "z": "c86eb73a2941d666",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "isclassification",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "4facead34f5e16dd"
+            ]
+        ]
     }
 ]
